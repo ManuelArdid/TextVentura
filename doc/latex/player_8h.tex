@@ -1,0 +1,498 @@
+\hypertarget{player_8h}{}\doxysection{include/player.h File Reference}
+\label{player_8h}\index{include/player.h@{include/player.h}}
+
+
+Functions of the player interface.  
+
+
+{\ttfamily \#include \char`\"{}inventory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for player.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{player_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__Player}{\+\_\+\+Player}} \mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}}
+\begin{DoxyCompactList}\small\item\em Data structure to implement Player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$ \mbox{\hyperlink{player_8h_a97ea1d0deda3c51ef6ce63a13dab7a38}{player\+\_\+create}} (\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Crate a new player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_a68e324aa5064e27d0a2f38aafb6809ad}{player\+\_\+destroy}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Destroy the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{player_8h_af5a101ec91427951c5875569a8709956}{player\+\_\+get\+\_\+id}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Return the player id. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{player_8h_a6622c02be2fe230a5c0df66385a13ece}{player\+\_\+get\+\_\+name}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Return the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_a6a30809f7775f5c2d3bef47d92769e59}{player\+\_\+set\+\_\+name}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em give a name to the player \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{player_8h_aa50ce77ab79af7166d749619fd60acfe}{player\+\_\+get\+\_\+location}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Return the player\textquotesingle{}s location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_a054e92b126f556153279b569f8987674}{player\+\_\+set\+\_\+location}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} location)
+\begin{DoxyCompactList}\small\item\em Assigne a location to the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_a2fc269feb0641f59daab5e6b77cb1a75}{player\+\_\+add\+\_\+object}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Add object to the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_a68871bc282449eb64b977acbdbd7565a}{player\+\_\+del\+\_\+object}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Deletes object of the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{player_8h_acdc09b2c46470e8c53616df7f5c0a51a}{player\+\_\+get\+\_\+object\+\_\+from\+\_\+pos}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, int pos)
+\begin{DoxyCompactList}\small\item\em Get object from position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{player_8h_ad5a08e5ca32270d87cf1494099a1cb25}{player\+\_\+has\+\_\+object}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Player has object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8h_aada4c08fa70eeb632570dfb8baee2227}{player\+\_\+get\+\_\+num\+\_\+of\+\_\+objects}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Gets player number of objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_a2d38859a1395cdbe003b05164dd5dbde}{player\+\_\+set\+\_\+max\+\_\+objects}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player, int max\+\_\+objs)
+\begin{DoxyCompactList}\small\item\em Assign a number of objects can take by the player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8h_a8baeb71317867e0946340cc7616141f1}{player\+\_\+get\+\_\+max\+\_\+objects}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em The maximum objects that the player can carry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{player_8h_aa0f2f8b4d1b63a60ef927d47aa45dbd1}{player\+\_\+print}} (\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Show player information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions of the player interface. 
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{player_8h_af30e2030635a69690f85e48bc6ef202f}\label{player_8h_af30e2030635a69690f85e48bc6ef202f}} 
+\index{player.h@{player.h}!Player@{Player}}
+\index{Player@{Player}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__Player}{\+\_\+\+Player}} \mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}}}
+
+
+
+Data structure to implement Player. 
+
+Defines the type of data 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{player_8h_a2fc269feb0641f59daab5e6b77cb1a75}\label{player_8h_a2fc269feb0641f59daab5e6b77cb1a75}} 
+\index{player.h@{player.h}!player\_add\_object@{player\_add\_object}}
+\index{player\_add\_object@{player\_add\_object}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_add\_object()}{player\_add\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+add\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Add object to the player. 
+
+player\+\_\+add\+\_\+object It gives the player an object
+
+\begin{DoxyDate}{Date}
+28-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where to save the object \\
+\hline
+{\em id} & the id of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a97ea1d0deda3c51ef6ce63a13dab7a38}\label{player_8h_a97ea1d0deda3c51ef6ce63a13dab7a38}} 
+\index{player.h@{player.h}!player\_create@{player\_create}}
+\index{player\_create@{player\_create}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_create()}{player\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}}$\ast$ player\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Crate a new player. 
+
+Public functions player\+\_\+create Assign memory to the new player and saves the id in the structure
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the new player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direction of player or N\+U\+LL if it fails
+\end{DoxyReturn}
+Public funtions implementation \mbox{\Hypertarget{player_8h_a68871bc282449eb64b977acbdbd7565a}\label{player_8h_a68871bc282449eb64b977acbdbd7565a}} 
+\index{player.h@{player.h}!player\_del\_object@{player\_del\_object}}
+\index{player\_del\_object@{player\_del\_object}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_del\_object()}{player\_del\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+del\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes object of the player. 
+
+player\+\_\+add\+\_\+object It removes a object that the player has
+
+\begin{DoxyDate}{Date}
+28-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where to remove the object \\
+\hline
+{\em id} & the id of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a68e324aa5064e27d0a2f38aafb6809ad}\label{player_8h_a68e324aa5064e27d0a2f38aafb6809ad}} 
+\index{player.h@{player.h}!player\_destroy@{player\_destroy}}
+\index{player\_destroy@{player\_destroy}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_destroy()}{player\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Destroy the player. 
+
+player\+\_\+destroy Free the memory allocated to the player element
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & is the object to free \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_af5a101ec91427951c5875569a8709956}\label{player_8h_af5a101ec91427951c5875569a8709956}} 
+\index{player.h@{player.h}!player\_get\_id@{player\_get\_id}}
+\index{player\_get\_id@{player\_get\_id}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_get\_id()}{player\_get\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} player\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Return the player id. 
+
+player\+\_\+get\+\_\+id Where can get a player\textquotesingle{}s id
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where it can find the id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the player\textquotesingle{}s id or N\+O\+\_\+\+ID if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_aa50ce77ab79af7166d749619fd60acfe}\label{player_8h_aa50ce77ab79af7166d749619fd60acfe}} 
+\index{player.h@{player.h}!player\_get\_location@{player\_get\_location}}
+\index{player\_get\_location@{player\_get\_location}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_get\_location()}{player\_get\_location()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} player\+\_\+get\+\_\+location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Return the player\textquotesingle{}s location. 
+
+player\+\_\+get\+\_\+location Where can get the location of a player
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where the location is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the player\textquotesingle{}s location or N\+O\+\_\+\+ID if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a8baeb71317867e0946340cc7616141f1}\label{player_8h_a8baeb71317867e0946340cc7616141f1}} 
+\index{player.h@{player.h}!player\_get\_max\_objects@{player\_get\_max\_objects}}
+\index{player\_get\_max\_objects@{player\_get\_max\_objects}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_get\_max\_objects()}{player\_get\_max\_objects()}}
+{\footnotesize\ttfamily int player\+\_\+get\+\_\+max\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+The maximum objects that the player can carry. 
+
+player\+\_\+get\+\_\+max\+\_\+objects Where can get the maximum objects that the player can carry
+
+\begin{DoxyDate}{Date}
+26-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where the maximum objects is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the maximum objects that the player can carry or -\/1 if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a6622c02be2fe230a5c0df66385a13ece}\label{player_8h_a6622c02be2fe230a5c0df66385a13ece}} 
+\index{player.h@{player.h}!player\_get\_name@{player\_get\_name}}
+\index{player\_get\_name@{player\_get\_name}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_get\_name()}{player\_get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ player\+\_\+get\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Return the player\textquotesingle{}s name. 
+
+player\+\_\+get\+\_\+name Where can get a player\textquotesingle{}s name
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where the name is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the player\textquotesingle{}s name or N\+U\+LL if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_aada4c08fa70eeb632570dfb8baee2227}\label{player_8h_aada4c08fa70eeb632570dfb8baee2227}} 
+\index{player.h@{player.h}!player\_get\_num\_of\_objects@{player\_get\_num\_of\_objects}}
+\index{player\_get\_num\_of\_objects@{player\_get\_num\_of\_objects}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_get\_num\_of\_objects()}{player\_get\_num\_of\_objects()}}
+{\footnotesize\ttfamily int player\+\_\+get\+\_\+num\+\_\+of\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Gets player number of objects. 
+
+player\+\_\+add\+\_\+object It gets how many objects it has the player
+
+\begin{DoxyDate}{Date}
+28-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where to save the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of objects if successful or -\/1 if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_acdc09b2c46470e8c53616df7f5c0a51a}\label{player_8h_acdc09b2c46470e8c53616df7f5c0a51a}} 
+\index{player.h@{player.h}!player\_get\_object\_from\_pos@{player\_get\_object\_from\_pos}}
+\index{player\_get\_object\_from\_pos@{player\_get\_object\_from\_pos}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_get\_object\_from\_pos()}{player\_get\_object\_from\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} player\+\_\+get\+\_\+object\+\_\+from\+\_\+pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Get object from position. 
+
+player\+\_\+add\+\_\+object It gets the object in the array with the position
+
+\begin{DoxyDate}{Date}
+28-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where it gets the information \\
+\hline
+{\em pos} & the position to find the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Id of the object if successful or N\+O\+\_\+\+ID if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_ad5a08e5ca32270d87cf1494099a1cb25}\label{player_8h_ad5a08e5ca32270d87cf1494099a1cb25}} 
+\index{player.h@{player.h}!player\_has\_object@{player\_has\_object}}
+\index{player\_has\_object@{player\_has\_object}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_has\_object()}{player\_has\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} player\+\_\+has\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Player has object. 
+
+player\+\_\+has\+\_\+object It finds if the player has the object
+
+\begin{DoxyDate}{Date}
+28-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where it gets the information \\
+\hline
+{\em id} & the id of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the player has the object or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_aa0f2f8b4d1b63a60ef927d47aa45dbd1}\label{player_8h_aa0f2f8b4d1b63a60ef927d47aa45dbd1}} 
+\index{player.h@{player.h}!player\_print@{player\_print}}
+\index{player\_print@{player\_print}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_print()}{player\_print()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Show player information. 
+
+player\+\_\+print Displays the player\textquotesingle{}s data on the screen
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where it can get the player information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a054e92b126f556153279b569f8987674}\label{player_8h_a054e92b126f556153279b569f8987674}} 
+\index{player.h@{player.h}!player\_set\_location@{player\_set\_location}}
+\index{player\_set\_location@{player\_set\_location}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_set\_location()}{player\_set\_location()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+set\+\_\+location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{location }\end{DoxyParamCaption})}
+
+
+
+Assigne a location to the player. 
+
+player\+\_\+set\+\_\+location Save the location id in the structure
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where to save the location \\
+\hline
+{\em location} & the id location of the player to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a2d38859a1395cdbe003b05164dd5dbde}\label{player_8h_a2d38859a1395cdbe003b05164dd5dbde}} 
+\index{player.h@{player.h}!player\_set\_max\_objects@{player\_set\_max\_objects}}
+\index{player\_set\_max\_objects@{player\_set\_max\_objects}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_set\_max\_objects()}{player\_set\_max\_objects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+set\+\_\+max\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{int}]{max\+\_\+objs }\end{DoxyParamCaption})}
+
+
+
+Assign a number of objects can take by the player. 
+
+player\+\_\+set\+\_\+max\+\_\+objects Save maximum objects that the player can carry in the structure
+
+\begin{DoxyDate}{Date}
+26-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where to save the object \\
+\hline
+{\em max\+\_\+objs} & maximum objects that the player can carry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a6a30809f7775f5c2d3bef47d92769e59}\label{player_8h_a6a30809f7775f5c2d3bef47d92769e59}} 
+\index{player.h@{player.h}!player\_set\_name@{player\_set\_name}}
+\index{player\_set\_name@{player\_set\_name}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{player\_set\_name()}{player\_set\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} player\+\_\+set\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+give a name to the player 
+
+player\+\_\+set\+\_\+name Save the name in the structure
+
+\begin{DoxyDate}{Date}
+20-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid C\+Hen
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & where the name will be saved \\
+\hline
+{\em name} & name of the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if successful or E\+R\+R\+OR if failed 
+\end{DoxyReturn}

@@ -1,0 +1,267 @@
+\hypertarget{die__test_8h}{}\doxysection{include/die\+\_\+test.h File Reference}
+\label{die__test_8h}\index{include/die\_test.h@{include/die\_test.h}}
+
+
+It declares the tests for the die module.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{die__test_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{die__test_8h_ac0b610468bd3d3b358051c966b771431}{test1\+\_\+die\+\_\+create}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_a2508c1329b5002e3830945dd9ad7f726}{test2\+\_\+die\+\_\+create}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_a3c3ddd06ebad004e0ccc95b79b0a1101}{test3\+\_\+die\+\_\+create}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_a3f2b94996d08d5e9fc2a7c6548519b1b}{test4\+\_\+die\+\_\+create}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_ad27d80a80c4b4fa108337135d5633c90}{test1\+\_\+die\+\_\+get\+\_\+id}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_a9c76572bbb86ca9138b99a010e6a184a}{test2\+\_\+die\+\_\+get\+\_\+id}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_ac005cb42fa33b38a79896934a5a50001}{test1\+\_\+die\+\_\+roll}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_af7df60d905acf9505f1e434c6f75d027}{test2\+\_\+die\+\_\+roll}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_ae99a954492e8be64b5f52a0a2b17a8ae}{test1\+\_\+die\+\_\+get\+\_\+last\+\_\+num}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_a6bd91ff20d539175c732784fc208fab1}{test2\+\_\+die\+\_\+get\+\_\+last\+\_\+num}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_adce4bdf23a43926e2bd182df5e46a597}{test1\+\_\+die\+\_\+get\+\_\+min}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_ae5e47e69298c26131816b6c4e38b66fb}{test2\+\_\+die\+\_\+get\+\_\+min}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_adc07f285d57b9f5191c10ad10f26986c}{test1\+\_\+die\+\_\+get\+\_\+max}} ()
+\item 
+void \mbox{\hyperlink{die__test_8h_ad1f923d1afb012f1d1ed8e17f57e5d9c}{test2\+\_\+die\+\_\+get\+\_\+max}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It declares the tests for the die module. 
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+06-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{die__test_8h_ac0b610468bd3d3b358051c966b771431}\label{die__test_8h_ac0b610468bd3d3b358051c966b771431}} 
+\index{die\_test.h@{die\_test.h}!test1\_die\_create@{test1\_die\_create}}
+\index{test1\_die\_create@{test1\_die\_create}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test1\_die\_create()}{test1\_die\_create()}}
+{\footnotesize\ttfamily void test1\+\_\+die\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Test die creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Die ID, min and max value 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Non N\+U\+LL pointer to die 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_ad27d80a80c4b4fa108337135d5633c90}\label{die__test_8h_ad27d80a80c4b4fa108337135d5633c90}} 
+\index{die\_test.h@{die\_test.h}!test1\_die\_get\_id@{test1\_die\_get\_id}}
+\index{test1\_die\_get\_id@{test1\_die\_get\_id}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test1\_die\_get\_id()}{test1\_die\_get\_id()}}
+{\footnotesize\ttfamily void test1\+\_\+die\+\_\+get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000005}{Test}}]Test die\+\_\+id getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die\+\_\+id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Die\+\_\+\+ID == Supplied Die Id 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_ae99a954492e8be64b5f52a0a2b17a8ae}\label{die__test_8h_ae99a954492e8be64b5f52a0a2b17a8ae}} 
+\index{die\_test.h@{die\_test.h}!test1\_die\_get\_last\_num@{test1\_die\_get\_last\_num}}
+\index{test1\_die\_get\_last\_num@{test1\_die\_get\_last\_num}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test1\_die\_get\_last\_num()}{test1\_die\_get\_last\_num()}}
+{\footnotesize\ttfamily void test1\+\_\+die\+\_\+get\+\_\+last\+\_\+num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000009}{Test}}]Test die\+\_\+last\+\_\+value getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die\+\_\+last\+\_\+value 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output==NO -\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_adc07f285d57b9f5191c10ad10f26986c}\label{die__test_8h_adc07f285d57b9f5191c10ad10f26986c}} 
+\index{die\_test.h@{die\_test.h}!test1\_die\_get\_max@{test1\_die\_get\_max}}
+\index{test1\_die\_get\_max@{test1\_die\_get\_max}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test1\_die\_get\_max()}{test1\_die\_get\_max()}}
+{\footnotesize\ttfamily void test1\+\_\+die\+\_\+get\+\_\+max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000013}{Test}}]Test die\+\_\+max getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die = N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output == -\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_adce4bdf23a43926e2bd182df5e46a597}\label{die__test_8h_adce4bdf23a43926e2bd182df5e46a597}} 
+\index{die\_test.h@{die\_test.h}!test1\_die\_get\_min@{test1\_die\_get\_min}}
+\index{test1\_die\_get\_min@{test1\_die\_get\_min}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test1\_die\_get\_min()}{test1\_die\_get\_min()}}
+{\footnotesize\ttfamily void test1\+\_\+die\+\_\+get\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000011}{Test}}]Test die\+\_\+min getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die = N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output == -\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_ac005cb42fa33b38a79896934a5a50001}\label{die__test_8h_ac005cb42fa33b38a79896934a5a50001}} 
+\index{die\_test.h@{die\_test.h}!test1\_die\_roll@{test1\_die\_roll}}
+\index{test1\_die\_roll@{test1\_die\_roll}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test1\_die\_roll()}{test1\_die\_roll()}}
+{\footnotesize\ttfamily void test1\+\_\+die\+\_\+roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000007}{Test}}]Test die\+\_\+roll \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die\+\_\+roll 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Outout==OK 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_a2508c1329b5002e3830945dd9ad7f726}\label{die__test_8h_a2508c1329b5002e3830945dd9ad7f726}} 
+\index{die\_test.h@{die\_test.h}!test2\_die\_create@{test2\_die\_create}}
+\index{test2\_die\_create@{test2\_die\_create}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test2\_die\_create()}{test2\_die\_create()}}
+{\footnotesize\ttfamily void test2\+\_\+die\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]Test die creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Die ID = N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output==N\+U\+LL 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_a9c76572bbb86ca9138b99a010e6a184a}\label{die__test_8h_a9c76572bbb86ca9138b99a010e6a184a}} 
+\index{die\_test.h@{die\_test.h}!test2\_die\_get\_id@{test2\_die\_get\_id}}
+\index{test2\_die\_get\_id@{test2\_die\_get\_id}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test2\_die\_get\_id()}{test2\_die\_get\_id()}}
+{\footnotesize\ttfamily void test2\+\_\+die\+\_\+get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000006}{Test}}]Test die\+\_\+id getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die\+\_\+id = N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Die\+\_\+\+ID == N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_a6bd91ff20d539175c732784fc208fab1}\label{die__test_8h_a6bd91ff20d539175c732784fc208fab1}} 
+\index{die\_test.h@{die\_test.h}!test2\_die\_get\_last\_num@{test2\_die\_get\_last\_num}}
+\index{test2\_die\_get\_last\_num@{test2\_die\_get\_last\_num}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test2\_die\_get\_last\_num()}{test2\_die\_get\_last\_num()}}
+{\footnotesize\ttfamily void test2\+\_\+die\+\_\+get\+\_\+last\+\_\+num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000010}{Test}}]Test die\+\_\+last\+\_\+value getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die\+\_\+last\+\_\+value = N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output==-\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_ad1f923d1afb012f1d1ed8e17f57e5d9c}\label{die__test_8h_ad1f923d1afb012f1d1ed8e17f57e5d9c}} 
+\index{die\_test.h@{die\_test.h}!test2\_die\_get\_max@{test2\_die\_get\_max}}
+\index{test2\_die\_get\_max@{test2\_die\_get\_max}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test2\_die\_get\_max()}{test2\_die\_get\_max()}}
+{\footnotesize\ttfamily void test2\+\_\+die\+\_\+get\+\_\+max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000014}{Test}}]Test die\+\_\+max getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Die\+\_\+\+ID == Supplied Die max 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_ae5e47e69298c26131816b6c4e38b66fb}\label{die__test_8h_ae5e47e69298c26131816b6c4e38b66fb}} 
+\index{die\_test.h@{die\_test.h}!test2\_die\_get\_min@{test2\_die\_get\_min}}
+\index{test2\_die\_get\_min@{test2\_die\_get\_min}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test2\_die\_get\_min()}{test2\_die\_get\_min()}}
+{\footnotesize\ttfamily void test2\+\_\+die\+\_\+get\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000012}{Test}}]Test die\+\_\+min getting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Die\+\_\+\+ID == Supplied Die min 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_af7df60d905acf9505f1e434c6f75d027}\label{die__test_8h_af7df60d905acf9505f1e434c6f75d027}} 
+\index{die\_test.h@{die\_test.h}!test2\_die\_roll@{test2\_die\_roll}}
+\index{test2\_die\_roll@{test2\_die\_roll}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test2\_die\_roll()}{test2\_die\_roll()}}
+{\footnotesize\ttfamily void test2\+\_\+die\+\_\+roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000008}{Test}}]Test die\+\_\+roll \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to die\+\_\+roll = N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Outout==E\+R\+R\+OR 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_a3c3ddd06ebad004e0ccc95b79b0a1101}\label{die__test_8h_a3c3ddd06ebad004e0ccc95b79b0a1101}} 
+\index{die\_test.h@{die\_test.h}!test3\_die\_create@{test3\_die\_create}}
+\index{test3\_die\_create@{test3\_die\_create}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test3\_die\_create()}{test3\_die\_create()}}
+{\footnotesize\ttfamily void test3\+\_\+die\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]Test die creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Die ID 
+
+Invalid min value 
+
+Max value 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output==N\+U\+LL 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{die__test_8h_a3f2b94996d08d5e9fc2a7c6548519b1b}\label{die__test_8h_a3f2b94996d08d5e9fc2a7c6548519b1b}} 
+\index{die\_test.h@{die\_test.h}!test4\_die\_create@{test4\_die\_create}}
+\index{test4\_die\_create@{test4\_die\_create}!die\_test.h@{die\_test.h}}
+\doxysubsubsection{\texorpdfstring{test4\_die\_create()}{test4\_die\_create()}}
+{\footnotesize\ttfamily void test4\+\_\+die\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]Test die creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Die ID 
+
+Min value greater than max value 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Output==N\+U\+LL 
+\end{DoxyPostcond}

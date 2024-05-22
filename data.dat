@@ -1,0 +1,80 @@
+#s:1|Entrada|-1|-1|1|-1|-1|-1|1|1|Entrada de la mansion|La escalofriante puerta de la mansion te recibe abierta de par en par.| _____ |[  I  ]|[ .I. ]|
+#s:2|Recibidor|1|5|2|6|-1|-1|1|1|Recibidor de la mansion|Parece que los unicos que quedan para recibirte son un monton de esqueletos sin vida, tienen las manos cortadas. La puerta de delante esta tapada con unos tablones de madera que parecen poder cortarse.|  ___  | (O O) |  \m/  |
+#s:3|Pasillo|2|8|3|9|-1|-1|1|1|Pasillo hacia el salon|Cuando has llegado, la imponente puerta del salon estaba cerrada con llave, los pasillos estan pobremente bloqueados con un monton de muebles, se puede pasar perfectamente. Parece que alguien intento atrincherarse aqui.|       |       |       |
+#s:4|Salon|3|-1|4|-1|-1|-1|1|1|Salon principal|El salon esta destrozado, solo queda una lampara y a su lado un gran sillon sospechosamente inclinado.|W [__] |IO    O|I[____]|
+#s:5|Cuarto secreto|4|-1|-1|-1|-1|-1|1|1|Cuarto secreto|Un improvisado y recien construido cuarto secreto pensado como refugio de emergencia. No sabes que paso aqui pero hay algo claro, nadie llego a tiempo.|       |       |       |
+#s:6|cuarto de herramientas|-1|-1|-1|5|-1|-1|1|1|Cuarto de herramientas desvalijado|Las estanterias estan vacias. Se lo han llevado todo menos un hacha|[-----]|[-----]|[-----]| 
+#s:7|Sala de estar|-1|6|-1|-1|-1|-1|1|1|Sala de estar|Una agradable habitacion en la que el Duque pasaba el tiempo con sus visitas. Ahora ya solo queda el polvo, libros tirados por el suelo y una chimenea que sorprendentemente aun esta encendida.| #___##|[# ## ]|[//\/\]|
+#s:8|Pasillo izquierdo|-1|7|-1|8|-1|-1|1|1|Pasillo izquierdo de la planta baja|Un largo pasillo adornado con estatuas de piedra a los lados, lleva a unas escaleras de subida.| (-_-) | [   ] | [   ] |
+#s:9|Pasillo derecho|-1|9|-1|10|-1|-1|1|1|Pasillo derecho de la planta baja|Un largo pasillo adornado con estatuas de piedra a los lados. Sus ojos brillan con luz roja y jurarias que gotean un liquido rojizo de sus hendiduras. Lleva a unas escaleras de bajada.| (Y_Y) | [#  ] | [  #] |
+#s:10|Escaleras hacia la primera planta|-1|-1|-1|7|11|-1|1|1|Escalera de subida|Tras cruzar un arco llegas a unas escaleras de subida, algunos de sus escalones de marmol estan rotos.|    [_]|  [___]|[_#___]|
+#s:11|Escaleras hacia el sotano|-1|10|-1|-1|-1|18|1|1|Escalera de bajada|Tras abrir la puerta llegas a unas escaleras de bajada. Los escalones estan en muy mal estado y cubiertos de rojas enredaderas que no parecen de este mundo. Aun asi se puede bajar.|    [#]|  [_#_]|[##__#]|
+#s:12|Escaleras hacia la planta baja|-1|-1|12|-1|-1|11|1|1|Escalera de bajada|Parece que mas alla de la escalera toda la planta esta a oscuras. Una puerta de cristal cerrada desde dentro te bloquea el paso, podrias lanzarle algo para romperla.|    [_]|  [___]|[_____]|
+#s:13|Pasillo superior|12|-1|13|15|-1|-1|0|0|Primer tramo del pasillo superior|Hay todo tipo de documentos por el suelo, alguien tenia prisa.|       |       |       |
+#s:14|Pasillo superior|13|17|14|16|-1|-1|0|0|Segundo tramo del pasillo superior|El desorden es incluso mayor. Al fondo ves la gran puerta del dormitorio del Duque.|       |       |       |
+#s:15|Dormitorio|14|-1|-1|-1|-1|-1|0|0|Dormitorio del Duque|Las paredes estan llenas de zarpazos, la cama cuenta con correas de seguridad. Al lado de la cama, hay un barril con un liquidio plateado.|[__]   |[  ]   |L  J{ }|
+#s:16|Habitacion 1|-1|15|-1|-1|-1|-1|0|0|Primera de las habitaciones para siervos|Parece la habitacion que compartian los encargados de limpiar y servir en el castillo. Las ventanas estan abiertas y la habitacion desierta.|[_] [_]|[ ] [ ]|L J L J|
+#s:17|Habitacion 2|-1|16|-1|-1|-1|-1|0|0|Segunda de las habitaciones para siervos|Parece que esta habitacion la compartian un grupo de alquimistas, las paredes estan llenas de calculos y anotaciones sobre algo llamado "alquimia interior". Hay varios documentos por el suelo.|[_] [_]|[ ] [ ]|L J L J|
+#s:18|Laboratorio|-1|-1|-1|17|-1|-1|0|0|Laboratorio abandonado|Laboratorio de alquimia repleto de equipamiento lleno de polvo, quizas algo sea util. Al fondo ves numerosas jaulas, prefieres no mirar dentro, el olor lo dice todo. |       |  []   | /__\  |
+#s:19|Escaleras del infierno|19|-1|-1|-1|18|-1|0|0|Escaleras de subida|Una asfixiante y oscura niebla recorre toda la planta. Enredaderas rojas como el rubi escalan por todas las paredes. Sientes que no estas solo.|    [#]|  [###]|[#####]|
+#s:20|Pasillo de las celdas|20|-1|19|22|-1|-1|0|0|Celdas del sotano|Un pasillo con varias celdas a su derecha, una esta abierta. La puerta del norte esta bloqueada por algun mecanismo. El peso de la niebla es mayor que antes, el aire se vuelve mas toxico. Sientes que no estas solo.|I I I I|I I I I|I I I I|
+#s:21|Sala de la estatua|21|23|20|-1|-1|-1|0|0|Sala de la estatua de piedra|Una gigantesca estatua de piedra bloquea tu camino hacia el norte. La demoniaca silueta clava su mirada en ti mientras en su mano derecha sostiene una copa de la que emana un repugnante olor a sangre. Mientras la estatua siga bloqueando el camino solo podras ir al oeste.| {( )} | (0_0) | \/  o |
+#s:22|Sala final|-1|-1|21|-1|-1|-1|0|0|Habitacion del tesoro|Por fin has llegado al final. La habitacion esta en el peor de los estados, es sorprendente que siga en pie. Puedes ver el origen de la niebla y las enredaderas en el centro de la habitacion, es un cofre. Es hora de tomar una decision.| _____ |[--o--]|[_____]|
+#s:23|Celda|-1|22|-1|-1|-1|-1|0|0|Celda maloliente|Restos humanos se amontonan por el suelo, los pocos cuerpos que quedan enteros han muerto en una posicion que solicita clemencia. Sientes que no estas solo.|  ___  | (O O) |  \m/  |
+#s:24|Sala de sacrificios|-1|-1|-1|23|-1|-1|0|0|Habitacion de los sacrificios|En el centro de la habitacion hay una cama de piedra, de la parte baja de la misma nacen varias tuberias que acaban en un gran matraz. Hay numerosos ataudes, todos vacios. Sientes que no estas solo.|[ ]    |[ ] [] |[ ]/_o\|
+
+
+#o:1|grabado|2|Un grabado en la pared dice: "Date la vuelta", esta escrito con sangre.|0|-1|-1|0|0
+#o:2|hacha|6|Un hacha afilada capaz de cortar madera.|1|-1|2|0|0
+#o:3|chimenea|7|Inexplicablemente, la llama de la chimenea aun no se ha apagado ni parece que lo vaya a hacer.|0|-1|-1|1|1
+#o:4|llave_salon|7|Una gran llave, parece de una habitacion importante.|1|-1|3|0|0
+#o:5|sillon|4|Parece que alguien ha movido el sillon dejando a la vista una trampilla, hace falta algo con lo que hacer fuerza para abrirla.|0|-1|-1|0|0
+#o:6|candelabro|4|Un candelabro, aun le queda alguna vela.|0|-1|-1|1|0
+#o:7|caliz|9|Un precioso caliz plateado lleno de adornos.|1|-1|0|0|0
+#o:8|antorcha|5|Una antorcha que puedes encender y apagar a voluntad, menos mal que has traido un mechero.|1|-1|0|1|0
+#o:9|llave_dormitorio|5|Una llave normal. Estaba escondida celosamente entre las posesiones del Duque.|1|-1|14|0|0
+#o:10|piedra|10|Trozo de marmol desprendido de las escaleras, podrias usarlo para romper algo.|1|-1|12|0|0
+#o:11|palanca|12|Palanca algo oxidada, aun puede usarse.|1|-1|4|0|0
+#o:12|diario|16|La ultima pagina dice: "Odio este lugar desde que aquellos hombres de blancas batas llegaron. No se que le han hecho al Duque, pero ya no es el buen hombre que antes fue. Ya no nos dejan bajar al sotano, solo Dios sabe que maldades esconden".|1|-1|-1|0|0
+#o:13|apuntes|17|Un escrito en una encimera dice asi: "Dia 117. Mis colegas no quieren escucharme, estan sordos ante la realidad! jamas conseguiremos lo que el Duque nos pide. Que ahora pueda beber mercurio no es prueba de que finalmente sea inmortal, es prueba de que ya no es humano. Dios mio, que hemos hecho".|1|-1|-1|0|0
+#o:14|testamento|15|El testamento dice asi: "Estos inutiles jamas me conseguiran lo que busco, de hecho, estan acabando conmigo, con mi humanidad, pero ya es muy tarde. Esto soy ahora, no un Duque, sino una abominacion desfigurada adicta a lo que sea que usan conmigo. Le lego mis riquezas a cualquiera que encuentre este dichoso papel, estan en el sotano, atragantate con ellas".|1|-1|-1|0|0
+#o:15|mercurio|15|El material y elemento quimico mas preciado por los alquimistas de esta mansion. Parece que necesitas algo especial para recogerlo.|1|7|10|0|0
+#o:16|inscripcion|9|Una inscripcion en la puerta plateada dice: "Solo un verdadero alquimista abrira esta puerta, muestrame la liquida llave plateada".|0|-1|-1|0|0
+#o:17|nota_1|23|Un brazo tenia una nota en la mano que dice asi: "Ayer me atraparon a mi. Oi los rumores sobre lo que hacian con los nuevos empleados que llegaban a la mansion y vine a buscarte...".|1|-1|-1|0|0
+#o:18|nota_2|23|Una segunda nota dice asi: "No se si llegaras a leer esto o siquiera si sigues vivo, pero si consigues salir de tu celda, he visto como pulsan un boton en ese atanor que tienen en el pasillo para abrir las puertas. Ni se te ocurra volver a por mi."|1|-1|-1|0|0
+#o:19|atanor|20|Un horno de alquimia, su intrumento basico. Esta colocado justo al lado de la puerta bloqueada.|0|-1|20|0|0
+#o:20|perla|24|Una perla hecha de sangre depositada en el matraz. Es tan delicada que el calor de tus manos la desintegraria, necesitas algo para cogerla.|1|21|21|0|0
+#o:21|pinzas|18|Un par de pinzas de precision para coger objetos delicados.|1|-1|-1|0|0
+#o:99|cofre_maldito|22|Un diminuto cofre infernal, parece que palpita, cogelo y mira dentro si te atreves.|1|-1|-1|0|0
+
+#p:1|p1y1|1|6| 
+
+#l:1|porton|2|1|0|
+#l:2|puerta_con_tablones|2|3|1|
+#l:3|puerta_salon|3|4|1|
+#l:4|trampilla|4|5|1|
+#l:5|puerta|6|2|0|
+#l:6|puerta|2|7|0|
+#l:7|arco_de_piedra|10|8|0|
+#l:8|puerta|8|3|0|
+#l:9|puerta|3|9|0|
+#l:10|puerta_plateada|9|11|1|
+#l:11|escalera|10|12|0|
+#l:12|puerta_cristal|12|13|1|
+#l:13|pasillo|13|14|0|
+#l:14|puerta_dormitorio|14|15|1|
+#l:15|puerta|13|16|0|
+#l:16|puerta|14|17|0|
+#l:17|puerta|18|14|0|
+#l:18|escalera_en_mal_estado|19|11|0|
+#l:19|puerta_forzada|20|19|0|
+#l:20|puerta_bloqueada|21|20|1|
+#l:21|estatua_de_piedra|22|21|1|
+#l:22|puerta_de_barrotes|20|23|0|
+#l:23|puerta|24|21|0|
+
+
+
+
+
+

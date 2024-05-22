@@ -1,0 +1,160 @@
+\hypertarget{command_8h}{}\doxysection{include/command.h File Reference}
+\label{command_8h}\index{include/command.h@{include/command.h}}
+
+
+Funtions and structure of command interface.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for command.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{command_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{command_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{command_8h_a8d93932dcdc527c13e06b688b68c7ffc}{N\+\_\+\+C\+M\+DT}}~2
+\item 
+\#define \mbox{\hyperlink{command_8h_ae180fe89f0ae48ce5c80ffaa18de9271}{N\+\_\+\+C\+MD}}~13
+\item 
+\#define \mbox{\hyperlink{command_8h_a2b1bd24d2eddf8081d8c541e4cc4fd4b}{C\+M\+D\+\_\+\+L\+E\+N\+G\+HT}}~30
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{command_8h_a096a001f895e218ffb74047e101e6225}{enum\+\_\+\+Cmd\+Type}} \mbox{\hyperlink{command_8h_a73c1d840a4f012aade722e446e0361cc}{T\+\_\+\+Cmd\+Type}}
+\begin{DoxyCompactList}\small\item\em Enumeration of T\+\_\+\+Cmd\+Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}\label{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}} 
+typedef enum \mbox{\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50c}{enum\+\_\+\+Command}} \mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}}
+\begin{DoxyCompactList}\small\item\em Enumeration of T\+\_\+\+Command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{command_8h_a096a001f895e218ffb74047e101e6225}{enum\+\_\+\+Cmd\+Type}} \{ {\bfseries C\+M\+DS}, 
+{\bfseries C\+M\+DL}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of T\+\_\+\+Cmd\+Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50c}\label{command_8h_ace19ba2296a74e4aef53304e0934c50c}} 
+enum \mbox{\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50c}{enum\+\_\+\+Command}} \{ \newline
+{\bfseries N\+O\+\_\+\+C\+MD} = -\/1, 
+{\bfseries U\+N\+K\+N\+O\+WN}, 
+{\bfseries E\+X\+IT}, 
+{\bfseries M\+O\+VE}, 
+\newline
+{\bfseries T\+A\+KE}, 
+{\bfseries D\+R\+OP}, 
+{\bfseries R\+O\+LL}, 
+{\bfseries I\+N\+S\+P\+E\+CT}, 
+\newline
+{\bfseries T\+U\+R\+N\+ON}, 
+{\bfseries T\+U\+R\+N\+O\+FF}, 
+{\bfseries O\+P\+EN}, 
+{\bfseries S\+A\+VE}, 
+\newline
+{\bfseries L\+O\+AD}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of T\+\_\+\+Command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} \mbox{\hyperlink{command_8h_a7ad92506157db30fe6e1941d62752291}{command\+\_\+get\+\_\+user\+\_\+input}} ()
+\begin{DoxyCompactList}\small\item\em Get command of user input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funtions and structure of command interface. 
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid\+P\+R\+OG 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13-\/01-\/2020 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{command_8h_a2b1bd24d2eddf8081d8c541e4cc4fd4b}\label{command_8h_a2b1bd24d2eddf8081d8c541e4cc4fd4b}} 
+\index{command.h@{command.h}!CMD\_LENGHT@{CMD\_LENGHT}}
+\index{CMD\_LENGHT@{CMD\_LENGHT}!command.h@{command.h}}
+\doxysubsubsection{\texorpdfstring{CMD\_LENGHT}{CMD\_LENGHT}}
+{\footnotesize\ttfamily \#define C\+M\+D\+\_\+\+L\+E\+N\+G\+HT~30}
+
+Defines the constant variables \mbox{\Hypertarget{command_8h_ae180fe89f0ae48ce5c80ffaa18de9271}\label{command_8h_ae180fe89f0ae48ce5c80ffaa18de9271}} 
+\index{command.h@{command.h}!N\_CMD@{N\_CMD}}
+\index{N\_CMD@{N\_CMD}!command.h@{command.h}}
+\doxysubsubsection{\texorpdfstring{N\_CMD}{N\_CMD}}
+{\footnotesize\ttfamily \#define N\+\_\+\+C\+MD~13}
+
+Defines the constant variables \mbox{\Hypertarget{command_8h_a8d93932dcdc527c13e06b688b68c7ffc}\label{command_8h_a8d93932dcdc527c13e06b688b68c7ffc}} 
+\index{command.h@{command.h}!N\_CMDT@{N\_CMDT}}
+\index{N\_CMDT@{N\_CMDT}!command.h@{command.h}}
+\doxysubsubsection{\texorpdfstring{N\_CMDT}{N\_CMDT}}
+{\footnotesize\ttfamily \#define N\+\_\+\+C\+M\+DT~2}
+
+Defines the constant variables 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{command_8h_a73c1d840a4f012aade722e446e0361cc}\label{command_8h_a73c1d840a4f012aade722e446e0361cc}} 
+\index{command.h@{command.h}!T\_CmdType@{T\_CmdType}}
+\index{T\_CmdType@{T\_CmdType}!command.h@{command.h}}
+\doxysubsubsection{\texorpdfstring{T\_CmdType}{T\_CmdType}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{command_8h_a096a001f895e218ffb74047e101e6225}{enum\+\_\+\+Cmd\+Type}} \mbox{\hyperlink{command_8h_a73c1d840a4f012aade722e446e0361cc}{T\+\_\+\+Cmd\+Type}}}
+
+
+
+Enumeration of T\+\_\+\+Cmd\+Type. 
+
+Public enumerations 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{command_8h_a096a001f895e218ffb74047e101e6225}\label{command_8h_a096a001f895e218ffb74047e101e6225}} 
+\index{command.h@{command.h}!enum\_CmdType@{enum\_CmdType}}
+\index{enum\_CmdType@{enum\_CmdType}!command.h@{command.h}}
+\doxysubsubsection{\texorpdfstring{enum\_CmdType}{enum\_CmdType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{command_8h_a096a001f895e218ffb74047e101e6225}{enum\+\_\+\+Cmd\+Type}}}
+
+
+
+Enumeration of T\+\_\+\+Cmd\+Type. 
+
+Public enumerations 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{command_8h_a7ad92506157db30fe6e1941d62752291}\label{command_8h_a7ad92506157db30fe6e1941d62752291}} 
+\index{command.h@{command.h}!command\_get\_user\_input@{command\_get\_user\_input}}
+\index{command\_get\_user\_input@{command\_get\_user\_input}!command.h@{command.h}}
+\doxysubsubsection{\texorpdfstring{command\_get\_user\_input()}{command\_get\_user\_input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} command\+\_\+get\+\_\+user\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get command of user input. 
+
+Public functions command\+\_\+get\+\_\+user\+\_\+input It gets the command of user input
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+the command of the user input
+\end{DoxyReturn}
+Public funtions implementation 

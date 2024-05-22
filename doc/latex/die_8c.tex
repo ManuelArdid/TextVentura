@@ -1,0 +1,284 @@
+\hypertarget{die_8c}{}\doxysection{src/die.c File Reference}
+\label{die_8c}\index{src/die.c@{src/die.c}}
+
+
+It implements the die interface.  
+
+
+{\ttfamily \#include \char`\"{}die.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for die.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{die_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Die}{\+\_\+\+Die}}
+\begin{DoxyCompactList}\small\item\em The die structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$ \mbox{\hyperlink{die_8c_ab04f324e79b2e023e540f8c491d13174}{die\+\_\+create}} (\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id, int max, int min)
+\begin{DoxyCompactList}\small\item\em Create new die. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{die_8c_a2115999335e58f733d846be485cfb783}{die\+\_\+destroy}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em It destroys a die. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{die_8c_a57c9a2627bb3a1ca04fe55d72bd6a5ea}{die\+\_\+get\+\_\+id}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em Get id of a die. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{die_8c_af1278ed628a7a1e1fc12f5ae100668a0}{die\+\_\+get\+\_\+min}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em get the min value of the die \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{die_8c_a97b4e55526df6d01bd9e1d8353914f0a}{die\+\_\+get\+\_\+max}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em get the max value of the die \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{die_8c_a0e963f1e5bcc5c7230db73afcda9a857}{die\+\_\+set\+\_\+last\+\_\+num}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die, int num)
+\begin{DoxyCompactList}\small\item\em set the last value of the die \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{die_8c_a25a7eef0006a8deb9de5b7e28779ef12}{die\+\_\+get\+\_\+last\+\_\+num}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em get the last value of the die \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{die_8c_afafc56aafeb40dbf889c421cace3d919}{die\+\_\+roll}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em It rolls the die. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{die_8c_a6ab2e5a9dcbd7ba3bf9ac6ebb183ac97}{die\+\_\+print}} (\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$die)
+\begin{DoxyCompactList}\small\item\em Shows the die information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the die interface. 
+
+It contains the funtions implementation of the die
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid Clavería 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{die_8c_ab04f324e79b2e023e540f8c491d13174}\label{die_8c_ab04f324e79b2e023e540f8c491d13174}} 
+\index{die.c@{die.c}!die\_create@{die\_create}}
+\index{die\_create@{die\_create}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_create()}{die\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}}$\ast$ die\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id,  }\item[{int}]{max,  }\item[{int}]{min }\end{DoxyParamCaption})}
+
+
+
+Create new die. 
+
+Public funtions implementation \mbox{\Hypertarget{die_8c_a2115999335e58f733d846be485cfb783}\label{die_8c_a2115999335e58f733d846be485cfb783}} 
+\index{die.c@{die.c}!die\_destroy@{die\_destroy}}
+\index{die\_destroy@{die\_destroy}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_destroy()}{die\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} die\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+It destroys a die. 
+
+die\+\_\+destroy It frees the memory that the die occupies
+
+\begin{DoxyDate}{Date}
+02-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & the die to be freed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_a57c9a2627bb3a1ca04fe55d72bd6a5ea}\label{die_8c_a57c9a2627bb3a1ca04fe55d72bd6a5ea}} 
+\index{die.c@{die.c}!die\_get\_id@{die\_get\_id}}
+\index{die\_get\_id@{die\_get\_id}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_get\_id()}{die\_get\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} die\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+Get id of a die. 
+
+die\+\_\+destroy It returns the id of the die
+
+\begin{DoxyDate}{Date}
+08-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id of the die or N\+O\+\_\+\+ID if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_a25a7eef0006a8deb9de5b7e28779ef12}\label{die_8c_a25a7eef0006a8deb9de5b7e28779ef12}} 
+\index{die.c@{die.c}!die\_get\_last\_num@{die\_get\_last\_num}}
+\index{die\_get\_last\_num@{die\_get\_last\_num}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_get\_last\_num()}{die\_get\_last\_num()}}
+{\footnotesize\ttfamily int die\+\_\+get\+\_\+last\+\_\+num (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+get the last value of the die 
+
+die\+\_\+get\+\_\+last\+\_\+num It returns the last value that the die got
+
+\begin{DoxyDate}{Date}
+02-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the information of the die \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the die\textquotesingle{}s last value or N\+U\+LL if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_a97b4e55526df6d01bd9e1d8353914f0a}\label{die_8c_a97b4e55526df6d01bd9e1d8353914f0a}} 
+\index{die.c@{die.c}!die\_get\_max@{die\_get\_max}}
+\index{die\_get\_max@{die\_get\_max}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_get\_max()}{die\_get\_max()}}
+{\footnotesize\ttfamily int die\+\_\+get\+\_\+max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+get the max value of the die 
+
+die\+\_\+get\+\_\+max It returns the max value that the die
+
+\begin{DoxyDate}{Date}
+24-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the information of the die \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the die\textquotesingle{}s last value or N\+U\+LL if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_af1278ed628a7a1e1fc12f5ae100668a0}\label{die_8c_af1278ed628a7a1e1fc12f5ae100668a0}} 
+\index{die.c@{die.c}!die\_get\_min@{die\_get\_min}}
+\index{die\_get\_min@{die\_get\_min}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_get\_min()}{die\_get\_min()}}
+{\footnotesize\ttfamily int die\+\_\+get\+\_\+min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+get the min value of the die 
+
+die\+\_\+get\+\_\+min It returns the min value that the die
+
+\begin{DoxyDate}{Date}
+24-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the information of the die \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the die\textquotesingle{}s last value or N\+U\+LL if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_a6ab2e5a9dcbd7ba3bf9ac6ebb183ac97}\label{die_8c_a6ab2e5a9dcbd7ba3bf9ac6ebb183ac97}} 
+\index{die.c@{die.c}!die\_print@{die\_print}}
+\index{die\_print@{die\_print}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_print()}{die\_print()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} die\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+Shows the die information. 
+
+die\+\_\+print It appears the information on the screen
+
+\begin{DoxyDate}{Date}
+02-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the die information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_afafc56aafeb40dbf889c421cace3d919}\label{die_8c_afafc56aafeb40dbf889c421cace3d919}} 
+\index{die.c@{die.c}!die\_roll@{die\_roll}}
+\index{die\_roll@{die\_roll}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_roll()}{die\_roll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} die\+\_\+roll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die }\end{DoxyParamCaption})}
+
+
+
+It rolls the die. 
+
+die\+\_\+roll It generates a random number between the min and max value
+
+\begin{DoxyDate}{Date}
+02-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the information of the die \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{die_8c_a0e963f1e5bcc5c7230db73afcda9a857}\label{die_8c_a0e963f1e5bcc5c7230db73afcda9a857}} 
+\index{die.c@{die.c}!die\_set\_last\_num@{die\_set\_last\_num}}
+\index{die\_set\_last\_num@{die\_set\_last\_num}!die.c@{die.c}}
+\doxysubsubsection{\texorpdfstring{die\_set\_last\_num()}{die\_set\_last\_num()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} die\+\_\+set\+\_\+last\+\_\+num (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}} $\ast$}]{die,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+set the last value of the die 
+
+\begin{DoxyDate}{Date}
+26-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & where it gets the information of the die \\
+\hline
+{\em num} & number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK or E\+R\+R\+OR 
+\end{DoxyReturn}

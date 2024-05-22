@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['last_5fcmd_165',['last_cmd',['../struct__Game.html#a27727b50ea0904a1fe9e1c55c27f2cf1',1,'_Game']]],
+  ['last_5fcmd_5fst_166',['last_cmd_st',['../struct__Game.html#a97138a1a7e68b45b951c8fb2b4fa3726',1,'_Game']]],
+  ['last_5fnum_167',['last_num',['../struct__Die.html#a32eb6d76a658d00832c484818879d071',1,'_Die']]],
+  ['light_5fact_168',['light_act',['../struct__Space.html#ae7e3950dfa25ff3749ec0d831a91be33',1,'_Space']]],
+  ['light_5finit_169',['light_init',['../struct__Space.html#a122c2c2f71c7e706c981c7cbec2f42ad',1,'_Space']]],
+  ['link_170',['Link',['../link_8h.html#ae3b299941e67be6971bfd64a25505eff',1,'link.h']]],
+  ['link_2ec_171',['link.c',['../link_8c.html',1,'']]],
+  ['link_2eh_172',['link.h',['../link_8h.html',1,'']]],
+  ['link_5fcreate_173',['link_create',['../link_8h.html#a8090d7f529cfd6a2fc5df3dd379fe514',1,'link_create(Id id):&#160;link.c'],['../link_8c.html#a8090d7f529cfd6a2fc5df3dd379fe514',1,'link_create(Id id):&#160;link.c']]],
+  ['link_5fdestroy_174',['link_destroy',['../link_8h.html#a85c4dd77887bf31f651ea1162144d712',1,'link_destroy(Link *link):&#160;link.c'],['../link_8c.html#a85c4dd77887bf31f651ea1162144d712',1,'link_destroy(Link *link):&#160;link.c']]],
+  ['link_5fget_5fid_175',['link_get_id',['../link_8h.html#a2bbd320f995a72b2ea7ea639b1c81892',1,'link_get_id(Link *link):&#160;link.c'],['../link_8c.html#a2bbd320f995a72b2ea7ea639b1c81892',1,'link_get_id(Link *link):&#160;link.c']]],
+  ['link_5fget_5fname_176',['link_get_name',['../link_8h.html#a9747ee8201a323e112e67bdeacbc90d8',1,'link_get_name(Link *link):&#160;link.c'],['../link_8c.html#a9747ee8201a323e112e67bdeacbc90d8',1,'link_get_name(Link *link):&#160;link.c']]],
+  ['link_5fget_5fspace1_177',['link_get_space1',['../link_8h.html#a7a703edf730484b48e951754f754bd94',1,'link_get_space1(Link *link):&#160;link.c'],['../link_8c.html#a7a703edf730484b48e951754f754bd94',1,'link_get_space1(Link *link):&#160;link.c']]],
+  ['link_5fget_5fspace2_178',['link_get_space2',['../link_8h.html#afefc169db63bad1b3660ba1d0ee14095',1,'link_get_space2(Link *link):&#160;link.c'],['../link_8c.html#afefc169db63bad1b3660ba1d0ee14095',1,'link_get_space2(Link *link):&#160;link.c']]],
+  ['link_5fis_5fclose_179',['link_is_close',['../link_8h.html#a8b7ad363c6bb2b92a2c3b40a6995d7ed',1,'link_is_close(Link *link):&#160;link.c'],['../link_8c.html#a8b7ad363c6bb2b92a2c3b40a6995d7ed',1,'link_is_close(Link *link):&#160;link.c']]],
+  ['link_5fprint_180',['link_print',['../link_8h.html#a95ea756dad592e65440a33dfbe47edcf',1,'link_print(Link *link):&#160;link.c'],['../link_8c.html#a95ea756dad592e65440a33dfbe47edcf',1,'link_print(Link *link):&#160;link.c']]],
+  ['link_5fset_5fclose_181',['link_set_close',['../link_8h.html#ac0dbaa9b2fcc9ed61db16c8fb4fc7942',1,'link_set_close(Link *link, BOOL close):&#160;link.c'],['../link_8c.html#ac0dbaa9b2fcc9ed61db16c8fb4fc7942',1,'link_set_close(Link *link, BOOL close):&#160;link.c']]],
+  ['link_5fset_5fname_182',['link_set_name',['../link_8h.html#a6c7a3bd7a856288c377edbcd045912e6',1,'link_set_name(Link *link, char *name):&#160;link.c'],['../link_8c.html#a6c7a3bd7a856288c377edbcd045912e6',1,'link_set_name(Link *link, char *name):&#160;link.c']]],
+  ['link_5fset_5fspace1_183',['link_set_space1',['../link_8h.html#aae5fe19ad2512430e52cf78968b52bf1',1,'link_set_space1(Link *link, Id id):&#160;link.c'],['../link_8c.html#aae5fe19ad2512430e52cf78968b52bf1',1,'link_set_space1(Link *link, Id id):&#160;link.c']]],
+  ['link_5fset_5fspace2_184',['link_set_space2',['../link_8h.html#a153c76eec748e402ea66cc13f2725131',1,'link_set_space2(Link *link, Id id):&#160;link.c'],['../link_8c.html#a153c76eec748e402ea66cc13f2725131',1,'link_set_space2(Link *link, Id id):&#160;link.c']]],
+  ['link_5ftest_2ec_185',['link_test.c',['../link__test_8c.html',1,'']]],
+  ['link_5ftest_2eh_186',['link_test.h',['../link__test_8h.html',1,'']]],
+  ['links_187',['links',['../struct__Game.html#a2b766f0814f66dcf437600a9c526142e',1,'_Game']]],
+  ['location_188',['location',['../struct__Player.html#adbb6195d15b88f3f658e74274eff52d8',1,'_Player']]]
+];

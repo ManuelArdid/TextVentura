@@ -1,0 +1,11 @@
+<map id="src/player.c" name="src/player.c">
+<area shape="rect" id="node1" title="New player implementation." alt="" coords="261,5,357,32"/>
+<area shape="rect" id="node2" href="$player_8h.html" title="Functions of the player interface." alt="" coords="177,80,252,107"/>
+<area shape="rect" id="node3" href="$inventory_8h.html" title="It defines the inventory of the game." alt="" coords="93,155,187,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="276,80,343,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="367,80,438,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="462,80,533,107"/>
+<area shape="rect" id="node5" href="$types_8h.html" title="It defines common types." alt="" coords="114,304,185,331"/>
+<area shape="rect" id="node4" href="$object_8h.html" title="Funtions of object interface." alt="" coords="5,229,80,256"/>
+<area shape="rect" id="node6" href="$set_8h.html" title="Funtions of set interface." alt="" coords="155,229,210,256"/>
+</map>

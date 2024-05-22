@@ -1,0 +1,117 @@
+\hypertarget{dialogue_8c}{}\doxysection{src/dialogue.c File Reference}
+\label{dialogue_8c}\index{src/dialogue.c@{src/dialogue.c}}
+
+
+It implements the dialogue interface.  
+
+
+{\ttfamily \#include \char`\"{}dialogue.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for dialogue.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dialogue_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Dialogue}{\+\_\+\+Dialogue}}
+\begin{DoxyCompactList}\small\item\em The Game structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{dialogue_8h_ad25e8d75177dc0ecfaaf97610765d318}{Dialogue}} $\ast$ \mbox{\hyperlink{dialogue_8c_acb150833c6f301d0311c2af653a56464}{dialogue\+\_\+create}} ()
+\begin{DoxyCompactList}\small\item\em It creates a new dialogue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{dialogue_8c_aa4043f1e971b702b32a8328af7be9df5}{dialogue\+\_\+destroy}} (\mbox{\hyperlink{dialogue_8h_ad25e8d75177dc0ecfaaf97610765d318}{Dialogue}} $\ast$dialogue)
+\begin{DoxyCompactList}\small\item\em It drestroys a dialogue. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{dialogue_8c_af13caf8c2bf8bd538c0f9e86c7878aa1}{dialogue\+\_\+get\+\_\+message}} (\mbox{\hyperlink{dialogue_8h_ad25e8d75177dc0ecfaaf97610765d318}{Dialogue}} $\ast$dialogue, \mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}} cmd, \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} st, \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, const char $\ast$option)
+\begin{DoxyCompactList}\small\item\em It gets dialogue message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the dialogue interface. 
+
+It contains the funtions implementation of dialogue
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dialogue_8c_acb150833c6f301d0311c2af653a56464}\label{dialogue_8c_acb150833c6f301d0311c2af653a56464}} 
+\index{dialogue.c@{dialogue.c}!dialogue\_create@{dialogue\_create}}
+\index{dialogue\_create@{dialogue\_create}!dialogue.c@{dialogue.c}}
+\doxysubsubsection{\texorpdfstring{dialogue\_create()}{dialogue\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{dialogue_8h_ad25e8d75177dc0ecfaaf97610765d318}{Dialogue}}$\ast$ dialogue\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It creates a new dialogue. 
+
+dialogue\+\_\+create It returns the diaglogue pointer
+
+\begin{DoxyDate}{Date}
+1-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+the dialogue pointer or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dialogue_8c_aa4043f1e971b702b32a8328af7be9df5}\label{dialogue_8c_aa4043f1e971b702b32a8328af7be9df5}} 
+\index{dialogue.c@{dialogue.c}!dialogue\_destroy@{dialogue\_destroy}}
+\index{dialogue\_destroy@{dialogue\_destroy}!dialogue.c@{dialogue.c}}
+\doxysubsubsection{\texorpdfstring{dialogue\_destroy()}{dialogue\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} dialogue\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dialogue_8h_ad25e8d75177dc0ecfaaf97610765d318}{Dialogue}} $\ast$}]{dialogue }\end{DoxyParamCaption})}
+
+
+
+It drestroys a dialogue. 
+
+dialogue\+\_\+destroy It returns the diaglogue pointer
+
+\begin{DoxyDate}{Date}
+1-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+OK if it succeed or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dialogue_8c_af13caf8c2bf8bd538c0f9e86c7878aa1}\label{dialogue_8c_af13caf8c2bf8bd538c0f9e86c7878aa1}} 
+\index{dialogue.c@{dialogue.c}!dialogue\_get\_message@{dialogue\_get\_message}}
+\index{dialogue\_get\_message@{dialogue\_get\_message}!dialogue.c@{dialogue.c}}
+\doxysubsubsection{\texorpdfstring{dialogue\_get\_message()}{dialogue\_get\_message()}}
+{\footnotesize\ttfamily const char$\ast$ dialogue\+\_\+get\+\_\+message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{dialogue_8h_ad25e8d75177dc0ecfaaf97610765d318}{Dialogue}} $\ast$}]{dialogue,  }\item[{\mbox{\hyperlink{command_8h_ab1f9bf350cc390d2bd227a2d6596cefb}{T\+\_\+\+Command}}}]{cmd,  }\item[{\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}}}]{st,  }\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{const char $\ast$}]{option }\end{DoxyParamCaption})}
+
+
+
+It gets dialogue message. 
+
+dialogue\+\_\+get\+\_\+message It returns the diaglogue message
+
+\begin{DoxyDate}{Date}
+1-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+the dialogue message or N\+U\+LL in case of failure 
+\end{DoxyReturn}

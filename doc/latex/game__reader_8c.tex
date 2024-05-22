@@ -1,0 +1,176 @@
+\hypertarget{game__reader_8c}{}\doxysection{src/game\+\_\+reader.c File Reference}
+\label{game__reader_8c}\index{src/game\_reader.c@{src/game\_reader.c}}
+
+
+Implementation of game reader interface.  
+
+
+{\ttfamily \#include \char`\"{}game\+\_\+reader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for game\+\_\+reader.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__reader_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__reader_8c_a1e0e4f4ede7bb399d6f33f66b7c38392}{game\+\_\+reader\+\_\+load\+\_\+spaces}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads the space of the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__reader_8c_a07d0cc9ec5cae35a9ad5dd7882357234}{game\+\_\+reader\+\_\+load\+\_\+objects}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads the objects into the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__reader_8c_a38c90d2eaaa4f9daed93df003d0f92f9}{game\+\_\+reader\+\_\+load\+\_\+player}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads the player into the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__reader_8c_aa47ab8dc1e29821281766ab359e8ac8b}{game\+\_\+reader\+\_\+load\+\_\+links}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads the link into the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__reader_8c_a3ef12bc9f42b43b7b72f5369c0b0cf27}{game\+\_\+reader\+\_\+create\+\_\+from\+\_\+file}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It creates the game from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of game reader interface. 
+
+Contains the implementation of the functions associated to game reader
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14-\/01-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__reader_8c_a3ef12bc9f42b43b7b72f5369c0b0cf27}\label{game__reader_8c_a3ef12bc9f42b43b7b72f5369c0b0cf27}} 
+\index{game\_reader.c@{game\_reader.c}!game\_reader\_create\_from\_file@{game\_reader\_create\_from\_file}}
+\index{game\_reader\_create\_from\_file@{game\_reader\_create\_from\_file}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_reader\_create\_from\_file()}{game\_reader\_create\_from\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+reader\+\_\+create\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It creates the game from a file. 
+
+Public funtions implementation \mbox{\Hypertarget{game__reader_8c_aa47ab8dc1e29821281766ab359e8ac8b}\label{game__reader_8c_aa47ab8dc1e29821281766ab359e8ac8b}} 
+\index{game\_reader.c@{game\_reader.c}!game\_reader\_load\_links@{game\_reader\_load\_links}}
+\index{game\_reader\_load\_links@{game\_reader\_load\_links}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_reader\_load\_links()}{game\_reader\_load\_links()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+reader\+\_\+load\+\_\+links (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the link into the game. 
+
+game\+\_\+reader\+\_\+load\+\_\+link It places the links into the game by reading a file
+
+\begin{DoxyDate}{Date}
+27-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where the links of game is going to be saved \\
+\hline
+{\em filename} & where it gets the links information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status if it succeed or E\+R\+R\+OR if it failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__reader_8c_a07d0cc9ec5cae35a9ad5dd7882357234}\label{game__reader_8c_a07d0cc9ec5cae35a9ad5dd7882357234}} 
+\index{game\_reader.c@{game\_reader.c}!game\_reader\_load\_objects@{game\_reader\_load\_objects}}
+\index{game\_reader\_load\_objects@{game\_reader\_load\_objects}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_reader\_load\_objects()}{game\_reader\_load\_objects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+reader\+\_\+load\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the objects into the game. 
+
+game\+\_\+reader\+\_\+load\+\_\+objects It places the objects into the spaces by reading a file
+
+\begin{DoxyDate}{Date}
+05-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where the objects of game is going to be saved \\
+\hline
+{\em filename} & where it gets the objects information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status if it succeed or E\+R\+R\+OR if it failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__reader_8c_a38c90d2eaaa4f9daed93df003d0f92f9}\label{game__reader_8c_a38c90d2eaaa4f9daed93df003d0f92f9}} 
+\index{game\_reader.c@{game\_reader.c}!game\_reader\_load\_player@{game\_reader\_load\_player}}
+\index{game\_reader\_load\_player@{game\_reader\_load\_player}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_reader\_load\_player()}{game\_reader\_load\_player()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+reader\+\_\+load\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the player into the game. 
+
+game\+\_\+reader\+\_\+load\+\_\+player It places the objects into the game by reading a file
+
+\begin{DoxyDate}{Date}
+26-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where the player of game is going to be saved \\
+\hline
+{\em filename} & where it gets the player information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status if it succeed or E\+R\+R\+OR if it failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game__reader_8c_a1e0e4f4ede7bb399d6f33f66b7c38392}\label{game__reader_8c_a1e0e4f4ede7bb399d6f33f66b7c38392}} 
+\index{game\_reader.c@{game\_reader.c}!game\_reader\_load\_spaces@{game\_reader\_load\_spaces}}
+\index{game\_reader\_load\_spaces@{game\_reader\_load\_spaces}!game\_reader.c@{game\_reader.c}}
+\doxysubsubsection{\texorpdfstring{game\_reader\_load\_spaces()}{game\_reader\_load\_spaces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+reader\+\_\+load\+\_\+spaces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the space of the game. 
+
+Private functions game\+\_\+reader\+\_\+load\+\_\+spaces It creates the space by reading a file
+
+\begin{DoxyDate}{Date}
+14-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where the space of game is going to be saved \\
+\hline
+{\em filename} & where it gets the space information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status if it succeed or E\+R\+R\+OR if it failed
+\end{DoxyReturn}
+Private funtions implementation 

@@ -1,0 +1,7 @@
+<map id="include/player.h" name="include/player.h">
+<area shape="rect" id="node1" title="Functions of the player interface." alt="" coords="120,5,245,32"/>
+<area shape="rect" id="node2" href="$inventory_8h.html" title="It defines the inventory of the game." alt="" coords="93,80,187,107"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="It defines common types." alt="" coords="114,229,185,256"/>
+<area shape="rect" id="node3" href="$object_8h.html" title="Funtions of object interface." alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node5" href="$set_8h.html" title="Funtions of set interface." alt="" coords="155,155,210,181"/>
+</map>

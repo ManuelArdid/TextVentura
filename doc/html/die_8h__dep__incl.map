@@ -1,0 +1,13 @@
+<map id="include/die.h" name="include/die.h">
+<area shape="rect" id="node1" title="Funtions of die interface." alt="" coords="433,5,538,32"/>
+<area shape="rect" id="node2" href="$game_8h.html" title="It defines the game interface for each command." alt="" coords="300,80,423,107"/>
+<area shape="rect" id="node10" href="$die_8c.html" title="It implements the die interface." alt="" coords="447,80,523,107"/>
+<area shape="rect" id="node11" href="$die__test_8c.html" title="It tests die module." alt="" coords="547,80,655,107"/>
+<area shape="rect" id="node3" href="$game__management_8h.html" title="Funtions of game management interface." alt="" coords="108,155,324,181"/>
+<area shape="rect" id="node4" href="$game_8c.html" title="It implements the game interface and all the associated callbacks for each command." alt="" coords="5,229,99,256"/>
+<area shape="rect" id="node5" href="$game__loop_8c.html" title="It defines the game loop interface." alt="" coords="333,229,461,256"/>
+<area shape="rect" id="node7" href="$graphic__engine_8h.html" title="It defines a textual graphic engine." alt="" coords="399,155,583,181"/>
+<area shape="rect" id="node9" href="$game__test_8c.html" title="It tests game module." alt="" coords="607,155,732,181"/>
+<area shape="rect" id="node6" href="$game__management_8c.html" title="Implementation of game management interface." alt="" coords="123,229,309,256"/>
+<area shape="rect" id="node8" href="$graphic__engine_8c.html" title="It implements the graphic engine interface." alt="" coords="485,229,640,256"/>
+</map>

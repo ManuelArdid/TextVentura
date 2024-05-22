@@ -1,0 +1,263 @@
+\hypertarget{graphic__engine_8c}{}\doxysection{src/graphic\+\_\+engine.c File Reference}
+\label{graphic__engine_8c}\index{src/graphic\_engine.c@{src/graphic\_engine.c}}
+
+
+It implements the graphic engine interface.  
+
+
+{\ttfamily \#include \char`\"{}graphic\+\_\+engine.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}command.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dialogue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screen.\+h\char`\"{}}\newline
+Include dependency graph for graphic\+\_\+engine.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic__engine_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Graphic__engine}{\+\_\+\+Graphic\+\_\+engine}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{graphic__engine_8c_a82acb32225c05e9aa4c524c40bc5852a}{M\+A\+X\+\_\+\+C\+H\+AR}}~64
+\item 
+\#define \mbox{\hyperlink{graphic__engine_8c_aa88400ec102cd1e2e36de0eb301de232}{W\+I\+DE}}~28
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{graphic__engine_8c_a415893c96cd8c47b3ecd08f2f6186d65}{graphic\+\_\+engine\+\_\+set\+\_\+string\+\_\+obj}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$obj, \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Set the string of objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{graphic__engine_8c_a0e51ffbb0be98d52c4848d0bd587070b}{graphic\+\_\+engine\+\_\+set\+\_\+string\+\_\+player\+\_\+obj}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$obj, \mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Set the string of the player objects. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{graphic__engine_8c_afcfe8ae9efc613b85749937842496047}{graphic\+\_\+engine\+\_\+print\+\_\+objects\+\_\+location}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Print the information of the objects and it\textquotesingle{}s location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{graphic__engine_8c_a8256956f8ba8bb71108437d22fc3f2cd}{graphic\+\_\+engine\+\_\+print\+\_\+field\+\_\+link\+\_\+descr}} (\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ge, \mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Print the field link. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ \mbox{\hyperlink{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}{graphic\+\_\+engine\+\_\+create}} ()
+\begin{DoxyCompactList}\small\item\em Creation of graphic engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}{graphic\+\_\+engine\+\_\+destroy}} (\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ge)
+\begin{DoxyCompactList}\small\item\em Destruction of graphic engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}{graphic\+\_\+engine\+\_\+paint\+\_\+game}} (\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$ge, \mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Paint graphic engine of game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the graphic engine interface. 
+
+Contains the implementation of the functions associated to graphic\+\_\+engine
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid\+P\+R\+OG 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13-\/01-\/2015 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{graphic__engine_8c_a82acb32225c05e9aa4c524c40bc5852a}\label{graphic__engine_8c_a82acb32225c05e9aa4c524c40bc5852a}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!MAX\_CHAR@{MAX\_CHAR}}
+\index{MAX\_CHAR@{MAX\_CHAR}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_CHAR}{MAX\_CHAR}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+C\+H\+AR~64}
+
+Defines the constant variables \mbox{\Hypertarget{graphic__engine_8c_aa88400ec102cd1e2e36de0eb301de232}\label{graphic__engine_8c_aa88400ec102cd1e2e36de0eb301de232}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!WIDE@{WIDE}}
+\index{WIDE@{WIDE}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{WIDE}{WIDE}}
+{\footnotesize\ttfamily \#define W\+I\+DE~28}
+
+Defines the constant variables 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}\label{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_create@{graphic\_engine\_create}}
+\index{graphic\_engine\_create@{graphic\_engine\_create}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_create()}{graphic\_engine\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}}$\ast$ graphic\+\_\+engine\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creation of graphic engine. 
+
+Public funtions implementation \mbox{\Hypertarget{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}\label{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_destroy@{graphic\_engine\_destroy}}
+\index{graphic\_engine\_destroy@{graphic\_engine\_destroy}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_destroy()}{graphic\_engine\_destroy()}}
+{\footnotesize\ttfamily void graphic\+\_\+engine\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{ge }\end{DoxyParamCaption})}
+
+
+
+Destruction of graphic engine. 
+
+graphic\+\_\+engine\+\_\+destroy This function free the dynamic memory reserved for a graph
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & graphic engine to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}\label{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_paint\_game@{graphic\_engine\_paint\_game}}
+\index{graphic\_engine\_paint\_game@{graphic\_engine\_paint\_game}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_paint\_game()}{graphic\_engine\_paint\_game()}}
+{\footnotesize\ttfamily void graphic\+\_\+engine\+\_\+paint\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{ge,  }\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Paint graphic engine of game. 
+
+graphic\+\_\+engine\+\_\+paint\+\_\+game This function paint graphic engine in the game area
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & graphic engine to paint \\
+\hline
+{\em game} & the game it gets the information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{graphic__engine_8c_a8256956f8ba8bb71108437d22fc3f2cd}\label{graphic__engine_8c_a8256956f8ba8bb71108437d22fc3f2cd}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_print\_field\_link\_descr@{graphic\_engine\_print\_field\_link\_descr}}
+\index{graphic\_engine\_print\_field\_link\_descr@{graphic\_engine\_print\_field\_link\_descr}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_print\_field\_link\_descr()}{graphic\_engine\_print\_field\_link\_descr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} graphic\+\_\+engine\+\_\+print\+\_\+field\+\_\+link\+\_\+descr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{ge,  }\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Print the field link. 
+
+graphic\+\_\+engine\+\_\+print\+\_\+field\+\_\+link\+\_\+descr It prints the linked spaces and number with the field
+
+\begin{DoxyDate}{Date}
+18-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & graphic engine to paint \\
+\hline
+{\em game} & where it gets the information of the game \\
+\hline
+{\em space} & the space it want to print \\
+\hline
+{\em id} & the id of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK it has printed correctly or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic__engine_8c_afcfe8ae9efc613b85749937842496047}\label{graphic__engine_8c_afcfe8ae9efc613b85749937842496047}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_print\_objects\_location@{graphic\_engine\_print\_objects\_location}}
+\index{graphic\_engine\_print\_objects\_location@{graphic\_engine\_print\_objects\_location}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_print\_objects\_location()}{graphic\_engine\_print\_objects\_location()}}
+{\footnotesize\ttfamily char $\ast$ graphic\+\_\+engine\+\_\+print\+\_\+objects\+\_\+location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Print the information of the objects and it\textquotesingle{}s location. 
+
+graphic\+\_\+engine\+\_\+print\+\_\+objects\+\_\+location It gets the string with the object information
+
+\begin{DoxyDate}{Date}
+19-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where it gets the information of the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string with the objects or N\+U\+LL if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic__engine_8c_a415893c96cd8c47b3ecd08f2f6186d65}\label{graphic__engine_8c_a415893c96cd8c47b3ecd08f2f6186d65}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_set\_string\_obj@{graphic\_engine\_set\_string\_obj}}
+\index{graphic\_engine\_set\_string\_obj@{graphic\_engine\_set\_string\_obj}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_set\_string\_obj()}{graphic\_engine\_set\_string\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} graphic\+\_\+engine\+\_\+set\+\_\+string\+\_\+obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{obj,  }\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Set the string of objects. 
+
+graphic\+\_\+engine\+\_\+set\+\_\+string\+\_\+obj It saves the object that are in the space
+
+\begin{DoxyDate}{Date}
+26-\/03-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where it gets the information of the game \\
+\hline
+{\em obj} & where its going to be saved the string of objects \\
+\hline
+{\em space} & where its going to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if it was saved correctly or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic__engine_8c_a0e51ffbb0be98d52c4848d0bd587070b}\label{graphic__engine_8c_a0e51ffbb0be98d52c4848d0bd587070b}} 
+\index{graphic\_engine.c@{graphic\_engine.c}!graphic\_engine\_set\_string\_player\_obj@{graphic\_engine\_set\_string\_player\_obj}}
+\index{graphic\_engine\_set\_string\_player\_obj@{graphic\_engine\_set\_string\_player\_obj}!graphic\_engine.c@{graphic\_engine.c}}
+\doxysubsubsection{\texorpdfstring{graphic\_engine\_set\_string\_player\_obj()}{graphic\_engine\_set\_string\_player\_obj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} graphic\+\_\+engine\+\_\+set\+\_\+string\+\_\+player\+\_\+obj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{obj,  }\item[{\mbox{\hyperlink{player_8h_af30e2030635a69690f85e48bc6ef202f}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Set the string of the player objects. 
+
+graphic\+\_\+engine\+\_\+set\+\_\+string\+\_\+player\+\_\+obj It saves the objects that the player is carrying
+
+\begin{DoxyDate}{Date}
+06-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid Clavería
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where it gets the information of the game \\
+\hline
+{\em obj} & where its going to be saved the string of objects \\
+\hline
+{\em player} & pointer to the player who is carrying the objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if it was saved correctly or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}

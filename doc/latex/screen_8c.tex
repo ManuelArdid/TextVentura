@@ -1,0 +1,329 @@
+\hypertarget{screen_8c}{}\doxysection{src/screen.c File Reference}
+\label{screen_8c}\index{src/screen.c@{src/screen.c}}
+
+
+It implements the screen of the game interface.  
+
+
+{\ttfamily \#include \char`\"{}screen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for screen.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{screen_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Area}{\+\_\+\+Area}}
+\begin{DoxyCompactList}\small\item\em The structure of Area. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{screen_8c_ad1b32d3d54fea228f1ef0c73de4a3929}{screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds}} (\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$area)
+\begin{DoxyCompactList}\small\item\em Return area cursor is out of bounds in the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a110e0b378730322f5a2f1dc91e65e2aa}{screen\+\_\+area\+\_\+scroll\+\_\+up}} (\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$area)
+\begin{DoxyCompactList}\small\item\em scroll up the screen area \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a55dedaa3b402fef825ceb6c3a957781d}{screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars}} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em screen utils to replace special characters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a9dbb6c251337c03c078dc330caee48d2}{screen\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a3d6d82dde2bb4f3ddc4d276dabe313ef}{screen\+\_\+destroy}} ()
+\begin{DoxyCompactList}\small\item\em destroy screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a3eaa0547a956d39b6c55c9593524e0d1}{screen\+\_\+paint}} ()
+\begin{DoxyCompactList}\small\item\em paint the screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$ \mbox{\hyperlink{screen_8c_a194528bec3ed3b57618a8f2df9bea743}{screen\+\_\+area\+\_\+init}} (int x, int y, int width, int height)
+\begin{DoxyCompactList}\small\item\em Initialize a screen area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_aca5123ed5a7afb75e79c0001e5d1df4f}{screen\+\_\+area\+\_\+destroy}} (\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$area)
+\begin{DoxyCompactList}\small\item\em Destroy the screen area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a0950dc68cba3d491b909a8abaac1c666}{screen\+\_\+area\+\_\+clear}} (\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$area)
+\begin{DoxyCompactList}\small\item\em Clear the screen area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_af77fa9df4f7170e1e3bf1c6209b7f0c2}{screen\+\_\+area\+\_\+reset\+\_\+cursor}} (\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$area)
+\begin{DoxyCompactList}\small\item\em Reset cursor of screen area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{screen_8c_a4f4cd4c7899c096d6c90cc33de9a9814}{screen\+\_\+area\+\_\+puts}} (\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$area, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Area will be put in screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{screen_8c_a34a5b96f7a2aa5db335b9fd09706cf0a}{\+\_\+\+\_\+data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the screen of the game interface. 
+
+Contains the implementation of the functions associated to screen
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid\+P\+R\+OG 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13-\/01-\/2015 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{screen_8c_a0950dc68cba3d491b909a8abaac1c666}\label{screen_8c_a0950dc68cba3d491b909a8abaac1c666}} 
+\index{screen.c@{screen.c}!screen\_area\_clear@{screen\_area\_clear}}
+\index{screen\_area\_clear@{screen\_area\_clear}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_clear()}{screen\_area\_clear()}}
+{\footnotesize\ttfamily void screen\+\_\+area\+\_\+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
+
+
+
+Clear the screen area. 
+
+screen\+\_\+area\+\_\+clear Call the function screen\+\_\+area\+\_\+reset\+\_\+cursor and fill the background
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & the screen area to be cleared \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{screen_8c_ad1b32d3d54fea228f1ef0c73de4a3929}\label{screen_8c_ad1b32d3d54fea228f1ef0c73de4a3929}} 
+\index{screen.c@{screen.c}!screen\_area\_cursor\_is\_out\_of\_bounds@{screen\_area\_cursor\_is\_out\_of\_bounds}}
+\index{screen\_area\_cursor\_is\_out\_of\_bounds@{screen\_area\_cursor\_is\_out\_of\_bounds}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_cursor\_is\_out\_of\_bounds()}{screen\_area\_cursor\_is\_out\_of\_bounds()}}
+{\footnotesize\ttfamily int screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
+
+
+
+Return area cursor is out of bounds in the screen. 
+
+Private functions screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds This function find if the screen cursor is out of bounds based on area structure
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & where it finds the cursor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the screen area cursor is out of bounds
+\end{DoxyReturn}
+Private funtions implementation \mbox{\Hypertarget{screen_8c_aca5123ed5a7afb75e79c0001e5d1df4f}\label{screen_8c_aca5123ed5a7afb75e79c0001e5d1df4f}} 
+\index{screen.c@{screen.c}!screen\_area\_destroy@{screen\_area\_destroy}}
+\index{screen\_area\_destroy@{screen\_area\_destroy}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_destroy()}{screen\_area\_destroy()}}
+{\footnotesize\ttfamily void screen\+\_\+area\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
+
+
+
+Destroy the screen area. 
+
+screen\+\_\+area\+\_\+destroy The function for free dynamic memory reserved for a area
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & the screen area to be destroyed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{screen_8c_a194528bec3ed3b57618a8f2df9bea743}\label{screen_8c_a194528bec3ed3b57618a8f2df9bea743}} 
+\index{screen.c@{screen.c}!screen\_area\_init@{screen\_area\_init}}
+\index{screen\_area\_init@{screen\_area\_init}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_init()}{screen\_area\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}}$\ast$ screen\+\_\+area\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Initialize a screen area. 
+
+screen\+\_\+area\+\_\+init This function allocates memory for Area and initiate the area
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & element in the area structure \\
+\hline
+{\em y} & element in the area structure \\
+\hline
+{\em width} & width of area \\
+\hline
+{\em height} & height of area\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the initialized area in the screen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{screen_8c_a4f4cd4c7899c096d6c90cc33de9a9814}\label{screen_8c_a4f4cd4c7899c096d6c90cc33de9a9814}} 
+\index{screen.c@{screen.c}!screen\_area\_puts@{screen\_area\_puts}}
+\index{screen\_area\_puts@{screen\_area\_puts}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_puts()}{screen\_area\_puts()}}
+{\footnotesize\ttfamily void screen\+\_\+area\+\_\+puts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$}]{area,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Area will be put in screen. 
+
+screen\+\_\+area\+\_\+puts This function put area in the screen
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & where can find the screen area \\
+\hline
+{\em str} & String to save characters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{screen_8c_af77fa9df4f7170e1e3bf1c6209b7f0c2}\label{screen_8c_af77fa9df4f7170e1e3bf1c6209b7f0c2}} 
+\index{screen.c@{screen.c}!screen\_area\_reset\_cursor@{screen\_area\_reset\_cursor}}
+\index{screen\_area\_reset\_cursor@{screen\_area\_reset\_cursor}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_reset\_cursor()}{screen\_area\_reset\_cursor()}}
+{\footnotesize\ttfamily void screen\+\_\+area\+\_\+reset\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
+
+
+
+Reset cursor of screen area. 
+
+screen\+\_\+area\+\_\+reset\+\_\+cursor It resets the cursor on the area
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & where can find the screen area \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{screen_8c_a110e0b378730322f5a2f1dc91e65e2aa}\label{screen_8c_a110e0b378730322f5a2f1dc91e65e2aa}} 
+\index{screen.c@{screen.c}!screen\_area\_scroll\_up@{screen\_area\_scroll\_up}}
+\index{screen\_area\_scroll\_up@{screen\_area\_scroll\_up}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_area\_scroll\_up()}{screen\_area\_scroll\_up()}}
+{\footnotesize\ttfamily void screen\+\_\+area\+\_\+scroll\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
+
+
+
+scroll up the screen area 
+
+screen\+\_\+area\+\_\+scroll\+\_\+up scroll up the screen area based on area structure
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & where it can find the elements of area \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{screen_8c_a3d6d82dde2bb4f3ddc4d276dabe313ef}\label{screen_8c_a3d6d82dde2bb4f3ddc4d276dabe313ef}} 
+\index{screen.c@{screen.c}!screen\_destroy@{screen\_destroy}}
+\index{screen\_destroy@{screen\_destroy}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_destroy()}{screen\_destroy()}}
+{\footnotesize\ttfamily void screen\+\_\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroy screen 
+
+screen\+\_\+destroy The function for free dynamic memory reserved for a \+\_\+\+\_\+data
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{screen_8c_a9dbb6c251337c03c078dc330caee48d2}\label{screen_8c_a9dbb6c251337c03c078dc330caee48d2}} 
+\index{screen.c@{screen.c}!screen\_init@{screen\_init}}
+\index{screen\_init@{screen\_init}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_init()}{screen\_init()}}
+{\footnotesize\ttfamily void screen\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize screen. 
+
+Public funtions implementation \mbox{\Hypertarget{screen_8c_a3eaa0547a956d39b6c55c9593524e0d1}\label{screen_8c_a3eaa0547a956d39b6c55c9593524e0d1}} 
+\index{screen.c@{screen.c}!screen\_paint@{screen\_paint}}
+\index{screen\_paint@{screen\_paint}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_paint()}{screen\_paint()}}
+{\footnotesize\ttfamily void screen\+\_\+paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+paint the screen 
+
+screen\+\_\+paint The function paint the screen with color
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{screen_8c_a55dedaa3b402fef825ceb6c3a957781d}\label{screen_8c_a55dedaa3b402fef825ceb6c3a957781d}} 
+\index{screen.c@{screen.c}!screen\_utils\_replaces\_special\_chars@{screen\_utils\_replaces\_special\_chars}}
+\index{screen\_utils\_replaces\_special\_chars@{screen\_utils\_replaces\_special\_chars}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{screen\_utils\_replaces\_special\_chars()}{screen\_utils\_replaces\_special\_chars()}}
+{\footnotesize\ttfamily void screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+screen utils to replace special characters 
+
+screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars It uses screen utils to replace special characters
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string to save characters \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{screen_8c_a34a5b96f7a2aa5db335b9fd09706cf0a}\label{screen_8c_a34a5b96f7a2aa5db335b9fd09706cf0a}} 
+\index{screen.c@{screen.c}!\_\_data@{\_\_data}}
+\index{\_\_data@{\_\_data}!screen.c@{screen.c}}
+\doxysubsubsection{\texorpdfstring{\_\_data}{\_\_data}}
+{\footnotesize\ttfamily char$\ast$ \+\_\+\+\_\+data}
+
+Defines the type of data 

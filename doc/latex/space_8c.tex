@@ -1,0 +1,1081 @@
+\hypertarget{space_8c}{}\doxysection{src/space.c File Reference}
+\label{space_8c}\index{src/space.c@{src/space.c}}
+
+
+It implements the space interface.  
+
+
+{\ttfamily \#include \char`\"{}space.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}set.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for space.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{space_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__Space}{\+\_\+\+Space}}
+\begin{DoxyCompactList}\small\item\em The Space structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$ \mbox{\hyperlink{space_8c_a162866fcea156b800fd546d0ffd271c9}{space\+\_\+create}} (\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Creation of space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a5c70c70398923693ddbe4dfac8d72a0d}{space\+\_\+destroy}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Destruction of space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{space_8c_ad4146220e58862d2671c80c9d649a062}{space\+\_\+has\+\_\+object}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em space has object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_aab5b468f9822ab78dbe16d1321870d93}{space\+\_\+set\+\_\+name}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set space name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a26498ec9d1677b71f8994daab7b9c43d}{space\+\_\+set\+\_\+up\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} link\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set space in the up with link id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a9573328f315e695141a082232d5c59be}{space\+\_\+set\+\_\+down\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} link\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set space in the down with link id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_acd0a97ab18c4543050104c8951fd8390}{space\+\_\+set\+\_\+north\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} link\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set space in the north with link id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a880cb694aac67c8699e9eb16f98b7f93}{space\+\_\+set\+\_\+south\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} link\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set space in the south with link id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a3bc995bc692d6e2af3ea5aff85979e06}{space\+\_\+set\+\_\+east\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} link\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set space in the east with link id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_aafa7d3c2fcec1ba7b3c21bd80ac0f977}{space\+\_\+set\+\_\+west\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} link\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Set space in the west with link id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_aa248b2e0572ec05f2757b799070b4f24}{space\+\_\+set\+\_\+gdesc}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$gdesc, int row)
+\begin{DoxyCompactList}\small\item\em space set graphic description \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a69b9e22046b7b44dc5aa2afe7cc0a1b9}{space\+\_\+add\+\_\+object}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Set object in the space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a4d8d68ad5dcf437ee8abd52ea30a268c}{space\+\_\+remove\+\_\+object}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Deletes the object in the space. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{space_8c_acf12bc50824f01881abb273c22154069}{space\+\_\+get\+\_\+number\+\_\+of\+\_\+objects}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get number of objects in the space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_aa4c51fab0e2383e54e5cbd80aacad9bf}{space\+\_\+get\+\_\+object\+\_\+from\+\_\+pos}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, int pos)
+\begin{DoxyCompactList}\small\item\em Get object from pos. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{space_8c_a310c540cd6e11073f7328add1f927001}{space\+\_\+get\+\_\+name}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_ac8ddfd0d8692fd852ee49698c446cb50}{space\+\_\+get\+\_\+id}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get the identification of space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_ad719f229ac999c76fcbacc4e0d2aca8c}{space\+\_\+get\+\_\+up\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space up link. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_af66a194f55f1105c2bee53f6fae5f2e5}{space\+\_\+get\+\_\+down\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space down link. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_af9d692e4605396bd816bc674d869c02a}{space\+\_\+get\+\_\+north\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space linked on the north. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_a3aaf05f4066a02d759dd24565a191f57}{space\+\_\+get\+\_\+south\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space linked on the south. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_a0964f5c3a74445aa9fd04327201a1ede}{space\+\_\+get\+\_\+east\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space linked on the east. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{space_8c_aa9f0e53abdae9b4ff9121910373d16ad}{space\+\_\+get\+\_\+west\+\_\+link}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get space linked on the west. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{space_8c_a01c0b4bf0e5f7a5431625ab0a75bcc36}{space\+\_\+get\+\_\+gdesc}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, int row)
+\begin{DoxyCompactList}\small\item\em space get graphic description \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} $\ast$ \mbox{\hyperlink{space_8c_a9cd5617c6cb1789172fdb315ab002f4b}{space\+\_\+get\+\_\+objects}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get objects in the space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{space_8c_a121a419f6f0c6b40a12ab66f8d6cdcc1}{space\+\_\+are\+\_\+linked}} (\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space1, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space2, \mbox{\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link}} $\ast$link)
+\begin{DoxyCompactList}\small\item\em spaces are linked \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a7aecc426029f567d452a0f916fd512d6}{space\+\_\+set\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em It assigns a description to the space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a8d61f34431bf1f48e7b7f0a5d845a103}{space\+\_\+set\+\_\+full\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em It assigns a full description to the space. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{space_8c_a51e854a2f9b35bd39e60c04ec5f03abd}{space\+\_\+get\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It returns the description of the space. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{space_8c_a2c2bfb481c39bbc8e9bd308f90d42856}{space\+\_\+get\+\_\+init\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It returns the description of the init space. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{space_8c_a9fb0fb97cdb30703a55d053ee1dc2bc4}{space\+\_\+get\+\_\+full\+\_\+description}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em It returns the full description of the space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_aa9eebf299d0480c74da5f8eabae6b6e9}{space\+\_\+set\+\_\+light\+\_\+act}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} light)
+\begin{DoxyCompactList}\small\item\em Set act light. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a0907f1aac99a0182e72daa0c9a87274f}{space\+\_\+set\+\_\+light\+\_\+init}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space, \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} light)
+\begin{DoxyCompactList}\small\item\em Set init light. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{space_8c_a14e1332fd9d444d9ae407469ce035ee2}{space\+\_\+get\+\_\+light\+\_\+act}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get light at a current act space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{space_8c_a5c5d6925709c027d6186268a2e5ba5e9}{space\+\_\+get\+\_\+light\+\_\+init}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Get light at the begin\+It determinates if a space is iluminated or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{space_8c_a18eca058da6cdf20ae5eda9d122d992e}{space\+\_\+print}} (\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$space)
+\begin{DoxyCompactList}\small\item\em Print information of space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It implements the space interface. 
+
+Contains the implementation of the functions associated to space
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid\+P\+R\+OG 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13-\/01-\/2015 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{space_8c_a69b9e22046b7b44dc5aa2afe7cc0a1b9}\label{space_8c_a69b9e22046b7b44dc5aa2afe7cc0a1b9}} 
+\index{space.c@{space.c}!space\_add\_object@{space\_add\_object}}
+\index{space\_add\_object@{space\_add\_object}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_add\_object()}{space\_add\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+add\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Set object in the space. 
+
+space\+\_\+add\+\_\+object add object to space in the structure
+
+\begin{DoxyDate}{Date}
+09/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it get the direction of the objects \\
+\hline
+{\em id} & the id of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a121a419f6f0c6b40a12ab66f8d6cdcc1}\label{space_8c_a121a419f6f0c6b40a12ab66f8d6cdcc1}} 
+\index{space.c@{space.c}!space\_are\_linked@{space\_are\_linked}}
+\index{space\_are\_linked@{space\_are\_linked}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_are\_linked()}{space\_are\_linked()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} space\+\_\+are\+\_\+linked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{space1,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{space2,  }\item[{\mbox{\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link}} $\ast$}]{link }\end{DoxyParamCaption})}
+
+
+
+spaces are linked 
+
+space\+\_\+are\+\_\+linked It sees if two spaces are linked
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space1} & first space \\
+\hline
+{\em space2} & second space \\
+\hline
+{\em link} & the direction of the link to be examined \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the spaces are linked or F\+A\+L\+SE if it\textquotesingle{}s not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a162866fcea156b800fd546d0ffd271c9}\label{space_8c_a162866fcea156b800fd546d0ffd271c9}} 
+\index{space.c@{space.c}!space\_create@{space\_create}}
+\index{space\_create@{space\_create}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_create()}{space\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}}$\ast$ space\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Creation of space. 
+
+Public funtions implementation \mbox{\Hypertarget{space_8c_a5c70c70398923693ddbe4dfac8d72a0d}\label{space_8c_a5c70c70398923693ddbe4dfac8d72a0d}} 
+\index{space.c@{space.c}!space\_destroy@{space\_destroy}}
+\index{space\_destroy@{space\_destroy}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_destroy()}{space\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Destruction of space. 
+
+space\+\_\+destroy Free the memory allocated to the space and objects element
+
+\begin{DoxyDate}{Date}
+12/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & is the space to free \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a51e854a2f9b35bd39e60c04ec5f03abd}\label{space_8c_a51e854a2f9b35bd39e60c04ec5f03abd}} 
+\index{space.c@{space.c}!space\_get\_description@{space\_get\_description}}
+\index{space\_get\_description@{space\_get\_description}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_description()}{space\_get\_description()}}
+{\footnotesize\ttfamily const char$\ast$ space\+\_\+get\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It returns the description of the space. 
+
+space\+\_\+get\+\_\+description It returns the description of a certain space
+
+\begin{DoxyDate}{Date}
+09-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & it the space to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the space\textquotesingle{}s description or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_af66a194f55f1105c2bee53f6fae5f2e5}\label{space_8c_af66a194f55f1105c2bee53f6fae5f2e5}} 
+\index{space.c@{space.c}!space\_get\_down\_link@{space\_get\_down\_link}}
+\index{space\_get\_down\_link@{space\_get\_down\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_down\_link()}{space\_get\_down\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+down\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space down link. 
+
+space\+\_\+get\+\_\+down\+\_\+link get down link from the space
+
+\begin{DoxyDate}{Date}
+19/04/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id of the down link or N\+U\+LL otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a0964f5c3a74445aa9fd04327201a1ede}\label{space_8c_a0964f5c3a74445aa9fd04327201a1ede}} 
+\index{space.c@{space.c}!space\_get\_east\_link@{space\_get\_east\_link}}
+\index{space\_get\_east\_link@{space\_get\_east\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_east\_link()}{space\_get\_east\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+east\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space linked on the east. 
+
+space\+\_\+get\+\_\+east\+\_\+link Where can get space link in east
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+ID if it fails or eastern linked id otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a9fb0fb97cdb30703a55d053ee1dc2bc4}\label{space_8c_a9fb0fb97cdb30703a55d053ee1dc2bc4}} 
+\index{space.c@{space.c}!space\_get\_full\_description@{space\_get\_full\_description}}
+\index{space\_get\_full\_description@{space\_get\_full\_description}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_full\_description()}{space\_get\_full\_description()}}
+{\footnotesize\ttfamily const char$\ast$ space\+\_\+get\+\_\+full\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It returns the full description of the space. 
+
+space\+\_\+get\+\_\+full\+\_\+description It returns the full description of a certain space
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the space\textquotesingle{}s full description or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a01c0b4bf0e5f7a5431625ab0a75bcc36}\label{space_8c_a01c0b4bf0e5f7a5431625ab0a75bcc36}} 
+\index{space.c@{space.c}!space\_get\_gdesc@{space\_get\_gdesc}}
+\index{space\_get\_gdesc@{space\_get\_gdesc}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_gdesc()}{space\_get\_gdesc()}}
+{\footnotesize\ttfamily char$\ast$ space\+\_\+get\+\_\+gdesc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+space get graphic description 
+
+space\+\_\+get\+\_\+gdesc where we can get the graphic description of the space in regards of the specific row
+
+\begin{DoxyDate}{Date}
+14/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it get the direction of the gdesc \\
+\hline
+{\em row} & it indicates the row of the graphic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string with the graphic of the specific row or N\+U\+LL if it failes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_ac8ddfd0d8692fd852ee49698c446cb50}\label{space_8c_ac8ddfd0d8692fd852ee49698c446cb50}} 
+\index{space.c@{space.c}!space\_get\_id@{space\_get\_id}}
+\index{space\_get\_id@{space\_get\_id}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_id()}{space\_get\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get the identification of space. 
+
+space\+\_\+get\+\_\+id Where is able to get the id of space
+
+\begin{DoxyDate}{Date}
+16/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+space id or N\+O\+\_\+\+ID if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a2c2bfb481c39bbc8e9bd308f90d42856}\label{space_8c_a2c2bfb481c39bbc8e9bd308f90d42856}} 
+\index{space.c@{space.c}!space\_get\_init\_description@{space\_get\_init\_description}}
+\index{space\_get\_init\_description@{space\_get\_init\_description}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_init\_description()}{space\_get\_init\_description()}}
+{\footnotesize\ttfamily const char$\ast$ space\+\_\+get\+\_\+init\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+It returns the description of the init space. 
+
+space\+\_\+get\+\_\+init\+\_\+description It returns the init description of a certain space
+
+\begin{DoxyDate}{Date}
+03-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & it the space to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the space\textquotesingle{}s description or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a14e1332fd9d444d9ae407469ce035ee2}\label{space_8c_a14e1332fd9d444d9ae407469ce035ee2}} 
+\index{space.c@{space.c}!space\_get\_light\_act@{space\_get\_light\_act}}
+\index{space\_get\_light\_act@{space\_get\_light\_act}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_light\_act()}{space\_get\_light\_act()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} space\+\_\+get\+\_\+light\+\_\+act (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get light at a current act space. 
+
+space\+\_\+get\+\_\+light\+\_\+act It returns if there is light or not in a space
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if there is light or F\+A\+L\+SE if there is not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a5c5d6925709c027d6186268a2e5ba5e9}\label{space_8c_a5c5d6925709c027d6186268a2e5ba5e9}} 
+\index{space.c@{space.c}!space\_get\_light\_init@{space\_get\_light\_init}}
+\index{space\_get\_light\_init@{space\_get\_light\_init}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_light\_init()}{space\_get\_light\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} space\+\_\+get\+\_\+light\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get light at the begin\+It determinates if a space is iluminated or not. 
+
+\begin{DoxyDate}{Date}
+30-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if there is light or F\+A\+L\+SE if there is not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a310c540cd6e11073f7328add1f927001}\label{space_8c_a310c540cd6e11073f7328add1f927001}} 
+\index{space.c@{space.c}!space\_get\_name@{space\_get\_name}}
+\index{space\_get\_name@{space\_get\_name}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_name()}{space\_get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ space\+\_\+get\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space name. 
+
+space\+\_\+get\+\_\+name Where can get the space name
+
+\begin{DoxyDate}{Date}
+16/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it can find the name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL if it fails or space name otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_af9d692e4605396bd816bc674d869c02a}\label{space_8c_af9d692e4605396bd816bc674d869c02a}} 
+\index{space.c@{space.c}!space\_get\_north\_link@{space\_get\_north\_link}}
+\index{space\_get\_north\_link@{space\_get\_north\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_north\_link()}{space\_get\_north\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+north\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space linked on the north. 
+
+space\+\_\+get\+\_\+north\+\_\+link Where can get space link in north
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+ID if it fails or northern linked id otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_acf12bc50824f01881abb273c22154069}\label{space_8c_acf12bc50824f01881abb273c22154069}} 
+\index{space.c@{space.c}!space\_get\_number\_of\_objects@{space\_get\_number\_of\_objects}}
+\index{space\_get\_number\_of\_objects@{space\_get\_number\_of\_objects}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_number\_of\_objects()}{space\_get\_number\_of\_objects()}}
+{\footnotesize\ttfamily int space\+\_\+get\+\_\+number\+\_\+of\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get number of objects in the space. 
+
+space\+\_\+get\+\_\+number\+\_\+of\+\_\+objects Where can get number of objects in the space
+
+\begin{DoxyDate}{Date}
+09/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space where it gets the number of objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of the object in the space or -\/1 if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_aa4c51fab0e2383e54e5cbd80aacad9bf}\label{space_8c_aa4c51fab0e2383e54e5cbd80aacad9bf}} 
+\index{space.c@{space.c}!space\_get\_object\_from\_pos@{space\_get\_object\_from\_pos}}
+\index{space\_get\_object\_from\_pos@{space\_get\_object\_from\_pos}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_object\_from\_pos()}{space\_get\_object\_from\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+object\+\_\+from\+\_\+pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Get object from pos. 
+
+space\+\_\+get\+\_\+object\+\_\+from\+\_\+pos It gets the id of the object from the postiion
+
+\begin{DoxyDate}{Date}
+26/04/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space where it gets the information \\
+\hline
+{\em pos} & the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id of the object or -\/1 if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a9cd5617c6cb1789172fdb315ab002f4b}\label{space_8c_a9cd5617c6cb1789172fdb315ab002f4b}} 
+\index{space.c@{space.c}!space\_get\_objects@{space\_get\_objects}}
+\index{space\_get\_objects@{space\_get\_objects}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_objects()}{space\_get\_objects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}$\ast$ space\+\_\+get\+\_\+objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get objects in the space. 
+
+space\+\_\+get\+\_\+objects Where it can get the object array in the space
+
+\begin{DoxyDate}{Date}
+09/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the direction of the array of objects in the space or N\+U\+LL if it fails or if there aren\textquotesingle{}t any objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a3aaf05f4066a02d759dd24565a191f57}\label{space_8c_a3aaf05f4066a02d759dd24565a191f57}} 
+\index{space.c@{space.c}!space\_get\_south\_link@{space\_get\_south\_link}}
+\index{space\_get\_south\_link@{space\_get\_south\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_south\_link()}{space\_get\_south\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+south\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space linked on the south. 
+
+space\+\_\+get\+\_\+south\+\_\+link Where can get space link in south
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+ID if it fails or southern linked id otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_ad719f229ac999c76fcbacc4e0d2aca8c}\label{space_8c_ad719f229ac999c76fcbacc4e0d2aca8c}} 
+\index{space.c@{space.c}!space\_get\_up\_link@{space\_get\_up\_link}}
+\index{space\_get\_up\_link@{space\_get\_up\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_up\_link()}{space\_get\_up\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+up\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space up link. 
+
+space\+\_\+get\+\_\+up\+\_\+link get up link from the space
+
+\begin{DoxyDate}{Date}
+19/04/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id of the up link or N\+U\+LL otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_aa9f0e53abdae9b4ff9121910373d16ad}\label{space_8c_aa9f0e53abdae9b4ff9121910373d16ad}} 
+\index{space.c@{space.c}!space\_get\_west\_link@{space\_get\_west\_link}}
+\index{space\_get\_west\_link@{space\_get\_west\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_get\_west\_link()}{space\_get\_west\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} space\+\_\+get\+\_\+west\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Get space linked on the west. 
+
+space\+\_\+get\+\_\+west\+\_\+link Where can get space link in east
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+ID if it fails or western linked id otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_ad4146220e58862d2671c80c9d649a062}\label{space_8c_ad4146220e58862d2671c80c9d649a062}} 
+\index{space.c@{space.c}!space\_has\_object@{space\_has\_object}}
+\index{space\_has\_object@{space\_has\_object}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_has\_object()}{space\_has\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} space\+\_\+has\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+space has object 
+
+space\+\_\+has\+\_\+object It find if the object it\textquotesingle{}s in the space
+
+\begin{DoxyDate}{Date}
+09/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it get the direction of the objects \\
+\hline
+{\em id} & the id of the object to be examined \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if it in the set or F\+A\+L\+SE if it\textquotesingle{}s not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a18eca058da6cdf20ae5eda9d122d992e}\label{space_8c_a18eca058da6cdf20ae5eda9d122d992e}} 
+\index{space.c@{space.c}!space\_print@{space\_print}}
+\index{space\_print@{space\_print}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_print()}{space\_print()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+Print information of space. 
+
+space\+\_\+print Print space ID, name, link and object information (if there is space)
+
+\begin{DoxyDate}{Date}
+16/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a4d8d68ad5dcf437ee8abd52ea30a268c}\label{space_8c_a4d8d68ad5dcf437ee8abd52ea30a268c}} 
+\index{space.c@{space.c}!space\_remove\_object@{space\_remove\_object}}
+\index{space\_remove\_object@{space\_remove\_object}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_remove\_object()}{space\_remove\_object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+remove\+\_\+object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the object in the space. 
+
+space\+\_\+remove\+\_\+object It takes out the object in the space
+
+\begin{DoxyDate}{Date}
+09/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it get the direction of the objects \\
+\hline
+{\em id} & the id of the object to be deleted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a7aecc426029f567d452a0f916fd512d6}\label{space_8c_a7aecc426029f567d452a0f916fd512d6}} 
+\index{space.c@{space.c}!space\_set\_description@{space\_set\_description}}
+\index{space\_set\_description@{space\_set\_description}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_description()}{space\_set\_description()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{description }\end{DoxyParamCaption})}
+
+
+
+It assigns a description to the space. 
+
+space\+\_\+set\+\_\+ndescription It gives a description to the space
+
+\begin{DoxyDate}{Date}
+09-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space to be assigned \\
+\hline
+{\em description} & the description of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a9573328f315e695141a082232d5c59be}\label{space_8c_a9573328f315e695141a082232d5c59be}} 
+\index{space.c@{space.c}!space\_set\_down\_link@{space\_set\_down\_link}}
+\index{space\_set\_down\_link@{space\_set\_down\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_down\_link()}{space\_set\_down\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+down\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{link\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Set space in the down with link id. 
+
+space\+\_\+set\+\_\+down\+\_\+link Set down link id in the structure
+
+\begin{DoxyDate}{Date}
+19/04/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em link\+\_\+id} & the id of the linked space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a3bc995bc692d6e2af3ea5aff85979e06}\label{space_8c_a3bc995bc692d6e2af3ea5aff85979e06}} 
+\index{space.c@{space.c}!space\_set\_east\_link@{space\_set\_east\_link}}
+\index{space\_set\_east\_link@{space\_set\_east\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_east\_link()}{space\_set\_east\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+east\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{link\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Set space in the east with link id. 
+
+space\+\_\+set\+\_\+east\+\_\+link Set eastern link id in the structure
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em link\+\_\+id} & the id of the linked space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a8d61f34431bf1f48e7b7f0a5d845a103}\label{space_8c_a8d61f34431bf1f48e7b7f0a5d845a103}} 
+\index{space.c@{space.c}!space\_set\_full\_description@{space\_set\_full\_description}}
+\index{space\_set\_full\_description@{space\_set\_full\_description}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_full\_description()}{space\_set\_full\_description()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+full\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{description }\end{DoxyParamCaption})}
+
+
+
+It assigns a full description to the space. 
+
+space\+\_\+set\+\_\+full\+\_\+description It gives a full description to the space
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space to be assigned \\
+\hline
+{\em description} & the full description of the space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_aa248b2e0572ec05f2757b799070b4f24}\label{space_8c_aa248b2e0572ec05f2757b799070b4f24}} 
+\index{space.c@{space.c}!space\_set\_gdesc@{space\_set\_gdesc}}
+\index{space\_set\_gdesc@{space\_set\_gdesc}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_gdesc()}{space\_set\_gdesc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+gdesc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{gdesc,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+space set graphic description 
+
+space\+\_\+set\+\_\+gdesc It gives a graphic description to the space
+
+\begin{DoxyDate}{Date}
+14/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where it\textquotesingle{}s going to be saved \\
+\hline
+{\em gdesc} & the string with the description \\
+\hline
+{\em row} & it indicates the row of the graphic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_aa9eebf299d0480c74da5f8eabae6b6e9}\label{space_8c_aa9eebf299d0480c74da5f8eabae6b6e9}} 
+\index{space.c@{space.c}!space\_set\_light\_act@{space\_set\_light\_act}}
+\index{space\_set\_light\_act@{space\_set\_light\_act}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_light\_act()}{space\_set\_light\_act()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+light\+\_\+act (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}}]{light }\end{DoxyParamCaption})}
+
+
+
+Set act light. 
+
+space\+\_\+set\+\_\+light\+\_\+act It determinates if a space is iluminated or not
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space \\
+\hline
+{\em light} & the boolean value of the light in that space\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a0907f1aac99a0182e72daa0c9a87274f}\label{space_8c_a0907f1aac99a0182e72daa0c9a87274f}} 
+\index{space.c@{space.c}!space\_set\_light\_init@{space\_set\_light\_init}}
+\index{space\_set\_light\_init@{space\_set\_light\_init}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_light\_init()}{space\_set\_light\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+light\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}}]{light }\end{DoxyParamCaption})}
+
+
+
+Set init light. 
+
+space\+\_\+set\+\_\+light\+\_\+init It sets the initial light value of the space
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & the space \\
+\hline
+{\em light} & the boolean value of the light in that space\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_aab5b468f9822ab78dbe16d1321870d93}\label{space_8c_aab5b468f9822ab78dbe16d1321870d93}} 
+\index{space.c@{space.c}!space\_set\_name@{space\_set\_name}}
+\index{space\_set\_name@{space\_set\_name}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_name()}{space\_set\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Set space name. 
+
+space\+\_\+set\+\_\+name Set name in the structure
+
+\begin{DoxyDate}{Date}
+16/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em name} & name of space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of error or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_acd0a97ab18c4543050104c8951fd8390}\label{space_8c_acd0a97ab18c4543050104c8951fd8390}} 
+\index{space.c@{space.c}!space\_set\_north\_link@{space\_set\_north\_link}}
+\index{space\_set\_north\_link@{space\_set\_north\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_north\_link()}{space\_set\_north\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+north\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{link\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Set space in the north with link id. 
+
+space\+\_\+set\+\_\+north\+\_\+link Set northern link id in the structure
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em link\+\_\+id} & the id of the linked space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a880cb694aac67c8699e9eb16f98b7f93}\label{space_8c_a880cb694aac67c8699e9eb16f98b7f93}} 
+\index{space.c@{space.c}!space\_set\_south\_link@{space\_set\_south\_link}}
+\index{space\_set\_south\_link@{space\_set\_south\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_south\_link()}{space\_set\_south\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+south\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{link\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Set space in the south with link id. 
+
+space\+\_\+set\+\_\+south\+\_\+link Set southern link id in the structure
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em link\+\_\+id} & the id of the linked space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_a26498ec9d1677b71f8994daab7b9c43d}\label{space_8c_a26498ec9d1677b71f8994daab7b9c43d}} 
+\index{space.c@{space.c}!space\_set\_up\_link@{space\_set\_up\_link}}
+\index{space\_set\_up\_link@{space\_set\_up\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_up\_link()}{space\_set\_up\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+up\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{link\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Set space in the up with link id. 
+
+space\+\_\+set\+\_\+up\+\_\+link Set up link id in the structure
+
+\begin{DoxyDate}{Date}
+19/04/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em link\+\_\+id} & the id of the linked space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{space_8c_aafa7d3c2fcec1ba7b3c21bd80ac0f977}\label{space_8c_aafa7d3c2fcec1ba7b3c21bd80ac0f977}} 
+\index{space.c@{space.c}!space\_set\_west\_link@{space\_set\_west\_link}}
+\index{space\_set\_west\_link@{space\_set\_west\_link}!space.c@{space.c}}
+\doxysubsubsection{\texorpdfstring{space\_set\_west\_link()}{space\_set\_west\_link()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} space\+\_\+set\+\_\+west\+\_\+link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space}} $\ast$}]{space,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{link\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Set space in the west with link id. 
+
+space\+\_\+set\+\_\+west\+\_\+link Set western link id in the structure
+
+\begin{DoxyDate}{Date}
+28/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & where is going to be saved \\
+\hline
+{\em link\+\_\+id} & the id of the linked space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+OR in case of failure or OK otherwise 
+\end{DoxyReturn}

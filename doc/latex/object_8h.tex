@@ -1,0 +1,653 @@
+\hypertarget{object_8h}{}\doxysection{include/object.h File Reference}
+\label{object_8h}\index{include/object.h@{include/object.h}}
+
+
+Funtions of object interface.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+Include dependency graph for object.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{object_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{object_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{object_8h_acdc7844fbd4d45737d4aa56834d37829}{M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+TS}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__Object}{\+\_\+\+Object}} \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}}
+\begin{DoxyCompactList}\small\item\em Data structure to implement Object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$ \mbox{\hyperlink{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}{object\+\_\+create}} (\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Create new object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_a19d6d51fee809e3801893eefc789f4b4}{object\+\_\+destroy}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It destroys an object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{object_8h_ac5af152381a21853c6a28cc120e8e7fe}{object\+\_\+get\+\_\+id}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It returns the object\textquotesingle{}s id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_ac15dc062c857503ec0ca66037caffd80}{object\+\_\+set\+\_\+name}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em It assigns a name to the object. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{object_8h_a19320eebcbbd38533a18c741b804b584}{object\+\_\+get\+\_\+name}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It returns the name of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_ae88627a8873d8f08fba9c0470a19cfc0}{object\+\_\+set\+\_\+description}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em It assigns a description to the object. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{object_8h_a4b26ef1ec7057673899b58a5bf55f06a}{object\+\_\+get\+\_\+description}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em It returns the description of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_afc7613779376230ea1f3b957795c16a0}{object\+\_\+set\+\_\+movable}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} value)
+\begin{DoxyCompactList}\small\item\em Object set movable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{object_8h_ac12989b1b71281f2d33bbb5ad16af7f8}{object\+\_\+is\+\_\+movable}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Object is movable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_a257013e7e31d3e2b1380f317b4f6a0ec}{object\+\_\+set\+\_\+dependency}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Object set dependency. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{object_8h_a9d40c68527b9f7b8264065914069b5e2}{object\+\_\+get\+\_\+dependency}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Object get dependency. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_ab62e9c302600d7c9a61392fff1b06534}{object\+\_\+set\+\_\+open}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} id)
+\begin{DoxyCompactList}\small\item\em Object set open. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} \mbox{\hyperlink{object_8h_a49dbce205db36230c53fb0ccf0a73174}{object\+\_\+get\+\_\+open}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Object get open. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_a95fa15b4e18a8c41a96c1f3f45ab1c36}{object\+\_\+set\+\_\+illuminate}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} value)
+\begin{DoxyCompactList}\small\item\em Object set illuminate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{object_8h_ab56284c985021d6c66ed028a70f8b28a}{object\+\_\+can\+\_\+illuminate}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Object can iluminate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_ae37f5872dca675d7f6a056531779e6d9}{object\+\_\+set\+\_\+turnedon}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} value)
+\begin{DoxyCompactList}\small\item\em Object set turned on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{object_8h_a2003212447400254939cc2d213d37112}{object\+\_\+is\+\_\+turnedon}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Object is turned on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_a64a543418992d9805d53d7198dfc0359}{object\+\_\+set\+\_\+discovery}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object, \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} value)
+\begin{DoxyCompactList}\small\item\em Set discovery of an object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} \mbox{\hyperlink{object_8h_a0bfc0c0e655faacc5945a609ac424517}{object\+\_\+is\+\_\+discovered}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Object is discovered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{object_8h_adebb77fb5d33fc70616ab3b2b64c27ce}{object\+\_\+print}} (\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Shows the object information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funtions of object interface. 
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{object_8h_acdc7844fbd4d45737d4aa56834d37829}\label{object_8h_acdc7844fbd4d45737d4aa56834d37829}} 
+\index{object.h@{object.h}!MAX\_OBJECTS@{MAX\_OBJECTS}}
+\index{MAX\_OBJECTS@{MAX\_OBJECTS}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_OBJECTS}{MAX\_OBJECTS}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+TS~100}
+
+Defines the constant variables 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}\label{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}} 
+\index{object.h@{object.h}!Object@{Object}}
+\index{Object@{Object}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{Object}{Object}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__Object}{\+\_\+\+Object}} \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}}}
+
+
+
+Data structure to implement Object. 
+
+Defines the type of data 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{object_8h_ab56284c985021d6c66ed028a70f8b28a}\label{object_8h_ab56284c985021d6c66ed028a70f8b28a}} 
+\index{object.h@{object.h}!object\_can\_illuminate@{object\_can\_illuminate}}
+\index{object\_can\_illuminate@{object\_can\_illuminate}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_can\_illuminate()}{object\_can\_illuminate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} object\+\_\+can\+\_\+illuminate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Object can iluminate. 
+
+object\+\_\+can\+\_\+illuminate It sees the illuminate value of the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the object iluminates or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}\label{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}} 
+\index{object.h@{object.h}!object\_create@{object\_create}}
+\index{object\_create@{object\_create}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_create()}{object\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}}$\ast$ object\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Create new object. 
+
+Public functions object\+\_\+create It assigns memory for the new object
+
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the new object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the address of the new object or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a19d6d51fee809e3801893eefc789f4b4}\label{object_8h_a19d6d51fee809e3801893eefc789f4b4}} 
+\index{object.h@{object.h}!object\_destroy@{object\_destroy}}
+\index{object\_destroy@{object\_destroy}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_destroy()}{object\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It destroys an object. 
+
+object\+\_\+destroy It frees the memory that the object occupies
+
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be freed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a9d40c68527b9f7b8264065914069b5e2}\label{object_8h_a9d40c68527b9f7b8264065914069b5e2}} 
+\index{object.h@{object.h}!object\_get\_dependency@{object\_get\_dependency}}
+\index{object\_get\_dependency@{object\_get\_dependency}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_dependency()}{object\_get\_dependency()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} object\+\_\+get\+\_\+dependency (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Object get dependency. 
+
+object\+\_\+get\+\_\+dependency It gets the dependency id of the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dependency id of the object or N\+O\+\_\+\+ID otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a4b26ef1ec7057673899b58a5bf55f06a}\label{object_8h_a4b26ef1ec7057673899b58a5bf55f06a}} 
+\index{object.h@{object.h}!object\_get\_description@{object\_get\_description}}
+\index{object\_get\_description@{object\_get\_description}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_description()}{object\_get\_description()}}
+{\footnotesize\ttfamily const char$\ast$ object\+\_\+get\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It returns the description of the object. 
+
+object\+\_\+get\+\_\+description It returns the description of a certain object
+
+\begin{DoxyDate}{Date}
+09-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & it the object to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object\textquotesingle{}s description or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_ac5af152381a21853c6a28cc120e8e7fe}\label{object_8h_ac5af152381a21853c6a28cc120e8e7fe}} 
+\index{object.h@{object.h}!object\_get\_id@{object\_get\_id}}
+\index{object\_get\_id@{object\_get\_id}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_id()}{object\_get\_id()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} object\+\_\+get\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It returns the object\textquotesingle{}s id. 
+
+object\+\_\+get\+\_\+id It returns the id of a certain object
+
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object\textquotesingle{}s id or N\+O\+\_\+\+ID if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a19320eebcbbd38533a18c741b804b584}\label{object_8h_a19320eebcbbd38533a18c741b804b584}} 
+\index{object.h@{object.h}!object\_get\_name@{object\_get\_name}}
+\index{object\_get\_name@{object\_get\_name}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_name()}{object\_get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ object\+\_\+get\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+It returns the name of the object. 
+
+object\+\_\+get\+\_\+name It returns the name of a certain object
+
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & it the object to be examinated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object\textquotesingle{}s name or N\+U\+LL in case of failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a49dbce205db36230c53fb0ccf0a73174}\label{object_8h_a49dbce205db36230c53fb0ccf0a73174}} 
+\index{object.h@{object.h}!object\_get\_open@{object\_get\_open}}
+\index{object\_get\_open@{object\_get\_open}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_get\_open()}{object\_get\_open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}} object\+\_\+get\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Object get open. 
+
+object\+\_\+get\+\_\+open It gets the open id of the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+open id of the object or N\+O\+\_\+\+ID otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a0bfc0c0e655faacc5945a609ac424517}\label{object_8h_a0bfc0c0e655faacc5945a609ac424517}} 
+\index{object.h@{object.h}!object\_is\_discovered@{object\_is\_discovered}}
+\index{object\_is\_discovered@{object\_is\_discovered}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_is\_discovered()}{object\_is\_discovered()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} object\+\_\+is\+\_\+discovered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Object is discovered. 
+
+object\+\_\+is\+\_\+discovered Returns a true value if the player had discover the object
+
+\begin{DoxyDate}{Date}
+04-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the discovered (or not) object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE or F\+A\+L\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_ac12989b1b71281f2d33bbb5ad16af7f8}\label{object_8h_ac12989b1b71281f2d33bbb5ad16af7f8}} 
+\index{object.h@{object.h}!object\_is\_movable@{object\_is\_movable}}
+\index{object\_is\_movable@{object\_is\_movable}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_is\_movable()}{object\_is\_movable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} object\+\_\+is\+\_\+movable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Object is movable. 
+
+object\+\_\+is\+\_\+movable It gets the movable value of the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the object can be moved or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a2003212447400254939cc2d213d37112}\label{object_8h_a2003212447400254939cc2d213d37112}} 
+\index{object.h@{object.h}!object\_is\_turnedon@{object\_is\_turnedon}}
+\index{object\_is\_turnedon@{object\_is\_turnedon}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_is\_turnedon()}{object\_is\_turnedon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}} object\+\_\+is\+\_\+turnedon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Object is turned on. 
+
+object\+\_\+is\+\_\+turnedon It sees the turnedon value of the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the object is turned on or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_adebb77fb5d33fc70616ab3b2b64c27ce}\label{object_8h_adebb77fb5d33fc70616ab3b2b64c27ce}} 
+\index{object.h@{object.h}!object\_print@{object\_print}}
+\index{object\_print@{object\_print}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_print()}{object\_print()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Shows the object information. 
+
+object\+\_\+print It appears the information on the screen
+
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & where it gets the object information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a257013e7e31d3e2b1380f317b4f6a0ec}\label{object_8h_a257013e7e31d3e2b1380f317b4f6a0ec}} 
+\index{object.h@{object.h}!object\_set\_dependency@{object\_set\_dependency}}
+\index{object\_set\_dependency@{object\_set\_dependency}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_dependency()}{object\_set\_dependency()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+dependency (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Object set dependency. 
+
+object\+\_\+set\+\_\+dependency It assigns a dependency id to the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em id} & dependency id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_ae88627a8873d8f08fba9c0470a19cfc0}\label{object_8h_ae88627a8873d8f08fba9c0470a19cfc0}} 
+\index{object.h@{object.h}!object\_set\_description@{object\_set\_description}}
+\index{object\_set\_description@{object\_set\_description}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_description()}{object\_set\_description()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{char $\ast$}]{description }\end{DoxyParamCaption})}
+
+
+
+It assigns a description to the object. 
+
+object\+\_\+set\+\_\+ndescription It gives a description to the object
+
+\begin{DoxyDate}{Date}
+09-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em description} & the description of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a64a543418992d9805d53d7198dfc0359}\label{object_8h_a64a543418992d9805d53d7198dfc0359}} 
+\index{object.h@{object.h}!object\_set\_discovery@{object\_set\_discovery}}
+\index{object\_set\_discovery@{object\_set\_discovery}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_discovery()}{object\_set\_discovery()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+discovery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Set discovery of an object. 
+
+object\+\_\+set\+\_\+discovery Set a true value if the player had discover the object
+
+\begin{DoxyDate}{Date}
+04-\/05-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the discovered (or not) object \\
+\hline
+{\em value} & T\+R\+UE or F\+A\+L\+SE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the object is turned on or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_a95fa15b4e18a8c41a96c1f3f45ab1c36}\label{object_8h_a95fa15b4e18a8c41a96c1f3f45ab1c36}} 
+\index{object.h@{object.h}!object\_set\_illuminate@{object\_set\_illuminate}}
+\index{object\_set\_illuminate@{object\_set\_illuminate}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_illuminate()}{object\_set\_illuminate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+illuminate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Object set illuminate. 
+
+object\+\_\+set\+\_\+illuminate It assigns a illuminate value to the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_afc7613779376230ea1f3b957795c16a0}\label{object_8h_afc7613779376230ea1f3b957795c16a0}} 
+\index{object.h@{object.h}!object\_set\_movable@{object\_set\_movable}}
+\index{object\_set\_movable@{object\_set\_movable}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_movable()}{object\_set\_movable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+movable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Object set movable. 
+
+object\+\_\+set\+\_\+movable It assigns a movable value to the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_ac15dc062c857503ec0ca66037caffd80}\label{object_8h_ac15dc062c857503ec0ca66037caffd80}} 
+\index{object.h@{object.h}!object\_set\_name@{object\_set\_name}}
+\index{object\_set\_name@{object\_set\_name}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_name()}{object\_set\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+It assigns a name to the object. 
+
+object\+\_\+set\+\_\+name It gives a name to the object
+
+\begin{DoxyDate}{Date}
+17-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em name} & the name of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_ab62e9c302600d7c9a61392fff1b06534}\label{object_8h_ab62e9c302600d7c9a61392fff1b06534}} 
+\index{object.h@{object.h}!object\_set\_open@{object\_set\_open}}
+\index{object\_set\_open@{object\_set\_open}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_open()}{object\_set\_open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Object set open. 
+
+object\+\_\+set\+\_\+open It assigns an open id to the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em id} & open id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object_8h_ae37f5872dca675d7f6a056531779e6d9}\label{object_8h_ae37f5872dca675d7f6a056531779e6d9}} 
+\index{object.h@{object.h}!object\_set\_turnedon@{object\_set\_turnedon}}
+\index{object\_set\_turnedon@{object\_set\_turnedon}!object.h@{object.h}}
+\doxysubsubsection{\texorpdfstring{object\_set\_turnedon()}{object\_set\_turnedon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} object\+\_\+set\+\_\+turnedon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}} $\ast$}]{object,  }\item[{\mbox{\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Object set turned on. 
+
+object\+\_\+set\+\_\+turnedon It assigns a turnedon value to the object
+
+\begin{DoxyDate}{Date}
+19-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to be assigned \\
+\hline
+{\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK in case of success or E\+R\+R\+OR if it fails 
+\end{DoxyReturn}

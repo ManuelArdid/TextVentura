@@ -1,0 +1,106 @@
+\hypertarget{game__management_8h}{}\doxysection{include/game\+\_\+management.h File Reference}
+\label{game__management_8h}\index{include/game\_management.h@{include/game\_management.h}}
+
+
+Funtions of game management interface.  
+
+
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inventory.\+h\char`\"{}}\newline
+Include dependency graph for game\+\_\+management.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__management_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__management_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__management_8h_afec68c063a60726a1429d20740dcb9ef}{game\+\_\+management\+\_\+load}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It restores a saved point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__management_8h_aa8c1688b52d1433de45138a9e44856fb}{game\+\_\+management\+\_\+save}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It creates a saving point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funtions of game management interface. 
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__management_8h_afec68c063a60726a1429d20740dcb9ef}\label{game__management_8h_afec68c063a60726a1429d20740dcb9ef}} 
+\index{game\_management.h@{game\_management.h}!game\_management\_load@{game\_management\_load}}
+\index{game\_management\_load@{game\_management\_load}!game\_management.h@{game\_management.h}}
+\doxysubsubsection{\texorpdfstring{game\_management\_load()}{game\_management\_load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+management\+\_\+load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It restores a saved point. 
+
+Public functions game\+\_\+management\+\_\+create\+\_\+from\+\_\+file It creates the game from a file
+
+\begin{DoxyDate}{Date}
+26-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where it\textquotesingle{}s going to be saved \\
+\hline
+{\em filename} & file where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if it succeed or E\+R\+R\+OR if it failed
+\end{DoxyReturn}
+Public funtions implementation \mbox{\Hypertarget{game__management_8h_aa8c1688b52d1433de45138a9e44856fb}\label{game__management_8h_aa8c1688b52d1433de45138a9e44856fb}} 
+\index{game\_management.h@{game\_management.h}!game\_management\_save@{game\_management\_save}}
+\index{game\_management\_save@{game\_management\_save}!game\_management.h@{game\_management.h}}
+\doxysubsubsection{\texorpdfstring{game\_management\_save()}{game\_management\_save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+management\+\_\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It creates a saving point. 
+
+game\+\_\+management\+\_\+save It places the current game into a file
+
+\begin{DoxyDate}{Date}
+26-\/04-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where it gets the information \\
+\hline
+{\em filename} & file where it writes the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if it succeed or E\+R\+R\+OR if it failed 
+\end{DoxyReturn}

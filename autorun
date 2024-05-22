@@ -1,0 +1,130 @@
+i e
+m s
+i e
+i grabado
+m o
+i e
+i hacha
+c hacha
+m e
+m e
+i e
+i chimenea
+i llave_salon
+c llave_salon
+m o
+abr puerta_con_tablones con hacha
+s hacha
+m s 
+i e
+m e
+i e
+i caliz
+c caliz
+m o
+m o
+i e
+m o
+i e
+i piedra
+c piedra
+m e
+m e 
+abr puerta_salon con llave_salon
+s llave_salon
+m o
+m o
+m ar
+i palanca
+c palanca
+m ab
+m e
+m e 
+m s
+i e
+i candelabro
+i sillon 
+abr trampilla con palanca 
+s palanca
+m s
+i e 
+i antorcha
+i llave_dormitorio
+c antorcha
+c llave_dormitorio 
+m n
+m n 
+m o
+m o
+m ar 
+i e 
+abr puerta_cristal con piedra 
+s piedra 
+m s 
+i e 
+e antorcha 
+i e  
+m e
+i e
+i e 
+i diario 
+m o 
+m s 
+i e 
+m e
+i e 
+i apuntes
+m o 
+m o 
+i e 
+i pinzas 
+c pinzas 
+m e 
+abr puerta_dormitorio con llave_dormitorio
+s llave_dormitorio
+m s
+i e 
+i testamento 
+i mercurio 
+c mercurio
+m n
+m n 
+m n 
+m ab
+m e 
+m e 
+m e 
+i e 
+i inscripcion 
+abr puerta_plateada con mercurio
+s caliz 
+m e
+i e
+m ab
+i e 
+m n
+i e 
+i atanor
+m e 
+i e 
+i nota_1
+i nota_2
+m o 
+abr puerta_bloqueada con atanor 
+m n
+i e 
+m o
+i e
+i perla 
+c perla 
+m e
+abr estatua_de_piedra con perla
+s perla
+m n
+i e 
+i cofre_maldito
+c cofre_maldito
+s
+
+
+

@@ -1,0 +1,10 @@
+<map id="src/inventory.c" name="src/inventory.c">
+<area shape="rect" id="node1" title="It implements the inventory interface." alt="" coords="211,5,327,32"/>
+<area shape="rect" id="node2" href="$inventory_8h.html" title="It defines the inventory of the game." alt="" coords="70,80,165,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="189,80,256,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="281,80,351,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="375,80,446,107"/>
+<area shape="rect" id="node3" href="$object_8h.html" title="Funtions of object interface." alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="It defines common types." alt="" coords="82,229,153,256"/>
+<area shape="rect" id="node5" href="$set_8h.html" title="Funtions of set interface." alt="" coords="155,155,210,181"/>
+</map>

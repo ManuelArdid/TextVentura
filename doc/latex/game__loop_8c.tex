@@ -1,0 +1,231 @@
+\hypertarget{game__loop_8c}{}\doxysection{src/game\+\_\+loop.c File Reference}
+\label{game__loop_8c}\index{src/game\_loop.c@{src/game\_loop.c}}
+
+
+It defines the game loop interface.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game\+\_\+management.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphic\+\_\+engine.\+h\char`\"{}}\newline
+Include dependency graph for game\+\_\+loop.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__loop_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{game__loop_8c_a82acb32225c05e9aa4c524c40bc5852a}{M\+A\+X\+\_\+\+C\+H\+AR}}~64
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game__loop_8c_a31e8784ceb06b2f65b70e074e3e1a722}{game\+\_\+loop\+\_\+init}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$$\ast$gengine, char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Initialize a game loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__loop_8c_a0017b802a5be7d09b1b71c8f4a5c16a8}{game\+\_\+loop\+\_\+run}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$gengine, F\+I\+LE $\ast$log)
+\begin{DoxyCompactList}\small\item\em Runs the game loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__loop_8c_a395965726eadd591bc6c02fed4709a4e}{game\+\_\+loop\+\_\+cleanup}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$gengine)
+\begin{DoxyCompactList}\small\item\em Game loop cleanup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game__loop_8c_a1faa941bfb8f1e20e8bf1571b09626c1}{game\+\_\+loop\+\_\+print\+\_\+log}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, F\+I\+LE $\ast$log)
+\begin{DoxyCompactList}\small\item\em Game loop print to log. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__loop_8c_a3492b930e25f8615ff957e4fec66cd4c}{game\+\_\+loop\+\_\+end}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, \mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$gengine)
+\begin{DoxyCompactList}\small\item\em Game loop end. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game__loop_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em main \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It defines the game loop interface. 
+
+Contains the implementation of the functions associated to game\+\_\+loop
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid\+P\+R\+OG 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+13-\/01-\/2020 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{game__loop_8c_a82acb32225c05e9aa4c524c40bc5852a}\label{game__loop_8c_a82acb32225c05e9aa4c524c40bc5852a}} 
+\index{game\_loop.c@{game\_loop.c}!MAX\_CHAR@{MAX\_CHAR}}
+\index{MAX\_CHAR@{MAX\_CHAR}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_CHAR}{MAX\_CHAR}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+C\+H\+AR~64}
+
+Defines the constant variables 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__loop_8c_a395965726eadd591bc6c02fed4709a4e}\label{game__loop_8c_a395965726eadd591bc6c02fed4709a4e}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_cleanup@{game\_loop\_cleanup}}
+\index{game\_loop\_cleanup@{game\_loop\_cleanup}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_cleanup()}{game\_loop\_cleanup()}}
+{\footnotesize\ttfamily void game\+\_\+loop\+\_\+cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{gengine }\end{DoxyParamCaption})}
+
+
+
+Game loop cleanup. 
+
+game\+\_\+loop\+\_\+cleanup This function realize a game loop cleanup by calling others functions
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & game to destroy \\
+\hline
+{\em gengine} & graphic engine to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__loop_8c_a3492b930e25f8615ff957e4fec66cd4c}\label{game__loop_8c_a3492b930e25f8615ff957e4fec66cd4c}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_end@{game\_loop\_end}}
+\index{game\_loop\_end@{game\_loop\_end}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_end()}{game\_loop\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+loop\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{gengine }\end{DoxyParamCaption})}
+
+
+
+Game loop end. 
+
+game\+\_\+loop\+\_\+end This function ask the user whether to open the door
+
+\begin{DoxyDate}{Date}
+07/05/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & game to destroy \\
+\hline
+{\em gengine} & graphic engine to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__loop_8c_a31e8784ceb06b2f65b70e074e3e1a722}\label{game__loop_8c_a31e8784ceb06b2f65b70e074e3e1a722}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_init@{game\_loop\_init}}
+\index{game\_loop\_init@{game\_loop\_init}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_init()}{game\_loop\_init()}}
+{\footnotesize\ttfamily int game\+\_\+loop\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$$\ast$}]{gengine,  }\item[{char $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Initialize a game loop. 
+
+Private functions game\+\_\+loop\+\_\+init This function starts the game loop
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & game to destroy and create \\
+\hline
+{\em gengine} & graphic engine to create \\
+\hline
+{\em file\+\_\+name} & file name to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if it initialized correctly or 1 if an error has occurred
+\end{DoxyReturn}
+Private funtions implementation \mbox{\Hypertarget{game__loop_8c_a1faa941bfb8f1e20e8bf1571b09626c1}\label{game__loop_8c_a1faa941bfb8f1e20e8bf1571b09626c1}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_print\_log@{game\_loop\_print\_log}}
+\index{game\_loop\_print\_log@{game\_loop\_print\_log}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_print\_log()}{game\_loop\_print\_log()}}
+{\footnotesize\ttfamily void game\+\_\+loop\+\_\+print\+\_\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{F\+I\+LE $\ast$}]{log }\end{DoxyParamCaption})}
+
+
+
+Game loop print to log. 
+
+game\+\_\+loop\+\_\+print\+\_\+log This function write the information about the command being successfully performed or not in a file
+
+\begin{DoxyDate}{Date}
+21/03/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where save the information of game \\
+\hline
+{\em log} & the file where its going to be written \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__loop_8c_a0017b802a5be7d09b1b71c8f4a5c16a8}\label{game__loop_8c_a0017b802a5be7d09b1b71c8f4a5c16a8}} 
+\index{game\_loop.c@{game\_loop.c}!game\_loop\_run@{game\_loop\_run}}
+\index{game\_loop\_run@{game\_loop\_run}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{game\_loop\_run()}{game\_loop\_run()}}
+{\footnotesize\ttfamily void game\+\_\+loop\+\_\+run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine}} $\ast$}]{gengine,  }\item[{F\+I\+LE $\ast$}]{log }\end{DoxyParamCaption})}
+
+
+
+Runs the game loop. 
+
+game\+\_\+loop\+\_\+run This function realize a running of game loop and it recives a file were it\textquotesingle{}s going to write the command execution
+
+\begin{DoxyDate}{Date}
+20/02/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the game it\textquotesingle{}s going to use \\
+\hline
+{\em gengine} & graphic engine to paint \\
+\hline
+{\em log} & the log file that it\textquotesingle{}s going to be used \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game__loop_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{game__loop_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{game\_loop.c@{game\_loop.c}!main@{main}}
+\index{main@{main}!game\_loop.c@{game\_loop.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+main 
+
+Main of the program main Principal funcion that calls the rest of the functions, it also show error if the argument passed its invalid
+
+\begin{DoxyDate}{Date}
+14-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of arguments \\
+\hline
+{\em argv} & the names of the arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the game was executed successfully or 1 if it fails 
+\end{DoxyReturn}

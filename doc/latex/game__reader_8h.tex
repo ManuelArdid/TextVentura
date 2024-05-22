@@ -1,0 +1,77 @@
+\hypertarget{game__reader_8h}{}\doxysection{include/game\+\_\+reader.h File Reference}
+\label{game__reader_8h}\index{include/game\_reader.h@{include/game\_reader.h}}
+
+
+Funtions of game reader interface.  
+
+
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inventory.\+h\char`\"{}}\newline
+Include dependency graph for game\+\_\+reader.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game__reader_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{game__reader_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} \mbox{\hyperlink{game__reader_8h_a3ef12bc9f42b43b7b72f5369c0b0cf27}{game\+\_\+reader\+\_\+create\+\_\+from\+\_\+file}} (\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em It creates the game from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funtions of game reader interface. 
+
+\begin{DoxyAuthor}{Author}
+Manuel Ardid 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game__reader_8h_a3ef12bc9f42b43b7b72f5369c0b0cf27}\label{game__reader_8h_a3ef12bc9f42b43b7b72f5369c0b0cf27}} 
+\index{game\_reader.h@{game\_reader.h}!game\_reader\_create\_from\_file@{game\_reader\_create\_from\_file}}
+\index{game\_reader\_create\_from\_file@{game\_reader\_create\_from\_file}!game\_reader.h@{game\_reader.h}}
+\doxysubsubsection{\texorpdfstring{game\_reader\_create\_from\_file()}{game\_reader\_create\_from\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US}} game\+\_\+reader\+\_\+create\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game}} $\ast$}]{game,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+It creates the game from a file. 
+
+Public functions game\+\_\+reader\+\_\+create\+\_\+from\+\_\+file It checks the return of the functions and it initialize the position of the player and object
+
+\begin{DoxyDate}{Date}
+14-\/02-\/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+\+: Manuel Ardid
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & where it\textquotesingle{}s going to be saved \\
+\hline
+{\em filename} & file where it gets the information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK if it succeed or E\+R\+R\+OR if it failed
+\end{DoxyReturn}
+Public funtions implementation 

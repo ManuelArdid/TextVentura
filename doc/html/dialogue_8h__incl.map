@@ -1,0 +1,7 @@
+<map id="include/dialogue.h" name="include/dialogue.h">
+<area shape="rect" id="node1" title="Funtions of dialogue interface." alt="" coords="71,5,212,32"/>
+<area shape="rect" id="node2" href="$command_8h.html" title="Funtions and structure of command interface." alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="It defines common types." alt="" coords="131,229,202,256"/>
+<area shape="rect" id="node4" href="$space_8h.html" title="Funtions of space inteface." alt="" coords="179,80,251,107"/>
+<area shape="rect" id="node5" href="$link_8h.html" title="Funtions of link inteface." alt="" coords="229,155,288,181"/>
+</map>
