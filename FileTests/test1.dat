@@ -1,0 +1,9 @@
+#s:1|Casilla 1|-1|-1|1|-1|-1|-1|1|1|First field of the game|This is the first field of the test|///////| FIRST |///////|
+#s:2|Casilla 2|1|-1|2|-1|-1|-1|0|0|Second field of the game|This is the second field of the test|///////|SECOND |///////|
+#s:3|Casilla 3|2|-1|-1|-1|-1|-1|1|1|Last field|This is the last field of the test|///////| LAST  |///////|
+#s:4|Casilla 4|-1|-1|-1|-1|-1|-1|1|1
+
+#l:1|Lnk 1|1|2|0|
+#l:2|Lnk 2|2|3|0|
+
+#p:1|ply1|1|1|

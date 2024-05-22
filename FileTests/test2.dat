@@ -1,0 +1,23 @@
+#s:1|Casilla 1|-1|-1|1|-1|-1|8|1|1|First field of the game|There is something on the right side of the space|  the  | field |   1   |
+#s:2|Casilla 2|1|-1|2|5|-1|-1|1|1|Linked with field 5|This is the hallway of the house. It seems there is a small ripped paper|  the  | field |   2   |
+#s:3|Casilla 3|2|6|3|6|-1|-1|0|0|Linked with field 1|There seems to be a tonnel|  the  | field |   3   |
+#s:4|Casilla 4|3|7|4|-1|-1|-1|1|1|There is nothing here|It's dead end hall|  the  | field |   4   |
+#s:5|Casilla 5|4|5|-1|-1|8|-1|1|1|Linked with field 2|There is a elevator that it only opens with a key, and you can go back|  the  | field |   5   |
+#s:6|Casilla 6|-1|-1|-1|-1|-1|-1|1|1
+
+#l:1|Lnk 1|1|2|0|
+#l:2|Lnk 2|2|3|0|
+#l:3|Lnk 3|3|4|0|
+#l:4|Lnk 4|4|5|0|
+#l:5|Lnk 5|2|5|0|
+#l:6|Lnk 6|3|5|0|
+#l:7|Lnk 7|2|4|0|
+#l:8|Lnk 8|5|1|1|
+
+#o:1|book|1|Found a book, nothing interesting in it|0|-1|-1|0|0
+#o:2|paper1|2|There is something written, but you just can see half of it. There must be another paper|1|-1|-1|0|0
+#o:3|paper2|3|It says the key to open the path it two places a head of you|1|2|-1|0|0
+#o:4|key|5|Key to open a door|1|-1|8|0|0|
+#o:5|flashlight|2|It's a flashlight|1|-1|0|1|0|
+
+#p:1|ply1|1|3|

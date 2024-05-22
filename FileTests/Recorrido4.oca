@@ -1,0 +1,7 @@
+ Take linterna
+ Take llave
+ open Puerta with llave
+ Move s
+ turnon linterna
+ save s
+ Exit

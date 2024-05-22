@@ -1,0 +1,10 @@
+ Take llave
+ open Puerta with llave
+ Move s
+ Move s
+ Move n
+ Move n
+ Move s
+ Drop llave
+ Move n
+ Exit
