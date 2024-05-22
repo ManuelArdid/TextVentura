@@ -10,9 +10,9 @@ In the following repository https://github.com/ManuelArdid/TextVentura-Herthal/,
 # How to make a game
 To create a game with TextVentura, you only need to modify the data.dat file. By modifying this file, you can add rooms, objects, and links between rooms.
 
-  Rooms
-    To add a room to the game, you must follow this format:
-    #s:<room id>|<room name>|<north link id>|<west link id>|<south link id>|<east link id>|<up link id>|<down link id>|<current light>|<initial light>|<general description>|<description>|<art1>|<art2>|<art2>
+  ## Rooms
+  To add a room to the game, you must follow this format:
+  #s:<room id>|<room name>|<north link id>|<west link id>|<south link id>|<east link id>|<up link id>|<down link id>|<current light>|<initial light>|<general description>|<description>|<art1>|<art2>|<art2>
     room id: unique id of the room
     room name: name of the room
     north link id: id of the north link
@@ -28,9 +28,9 @@ To create a game with TextVentura, you only need to modify the data.dat file. By
     art: you can paint the room's "artwork" with 3 lines of 7 characters. They will be painted on top of each other, art 1 at the top and art 3 at the bottom. For de default "empty" room, use: |       |       |       |
     Room example: #s:1|Entrance|-1|-1|1|-1|-1|-1|1|1|Mansion entrance|The eerie mansion door greets you wide open.| _____ |[ I ]|[ .I. ]|
 
-Links
-  Links connect the rooms; think of them as doors, but they can be anything (doors, hatches, puzzles, rivers...). To create a new link, you must follow this format:
-  #l:<link id>|<link name>|<room 1 id>|<room 2 id>|<state>|
+## Links
+Links connect the rooms; think of them as doors, but they can be anything (doors, hatches, puzzles, rivers...). To create a new link, you must follow this format:
+#l:<link id>|<link name>|<room 1 id>|<room 2 id>|<state>|
   link id: unique id for the link
   link name: name of the link
   room 1 id: id of one of the two connected rooms
@@ -38,9 +38,9 @@ Links
   state: state of the link, open or closed (0/1)
   link example: #l:1|door|2|1|0| this is a door between room 1 and 2
 
-Objects
-  Objects are located in rooms. To create an object, follow this format:
-  #<object id>|<object name>|<id room location>|<description>|<movable>|<object id dependency>|<id room key>|<illuminate>|<turned on>|<discovery>
+## Objects
+Objects are located in rooms. To create an object, follow this format:
+#<object id>|<object name>|<id room location>|<description>|<movable>|<object id dependency>|<id room key>|<illuminate>|<turned on>|<discovery>
   object id: unique id of the object
   object name: name of the object
   id room location: id of the room where the object is located
@@ -53,14 +53,14 @@ Objects
   discovery: whether the object has already been discovered by the player (0/1)
   example: #o:2|axe|6|A sharp axe capable of cutting wood.|1|-1|2|0|0 this axe can be picked up and is used to open a link, which could be, for example, a door with planks
 
-Player
-  Last but not least, the player. To create the pleayer use this format:
-  #p:1|<player name>|<initial position>|<max object>| 
+## Player
+Last but not least, the player. To create the pleayer use this format:
+#p:1|<player name>|<initial position>|<max object>| 
   player name: name of the player
   initial position: room id of the initial room 
   max objects: maximum number of objects the player can carry
 
-  note that the player id is always 1
+note that the player id is always 1
 
 
 # Dice
