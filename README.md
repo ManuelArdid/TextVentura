@@ -68,7 +68,7 @@ Last but not least, the player. To create the pleayer use this format:
 
 Note that the player id is always 1.
 
-#How to start your game
+# How to start your game
 Start your game with either "make" or "./game data.dat -l fchlog"
 
 # Dice
