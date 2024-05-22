@@ -1,5 +1,5 @@
 # TextVentura
-Created as a project for a subject in my university education and graded with honors, TextVentura is an engine that allows you to create terminal-based interactive fiction games in a simple way through the editing of a single .dat file.
+Created as a project for a subject in my university education and graded with honors, TextVentura is an engine that allows you to create linux terminal-based interactive fiction games in a simple way through the editing of a single .dat file.
 
 In TextVentura, you can create rooms and objects with rich descriptions, as well as doors that block the way until the appropriate object is used. The engine supports intricate object-collecting based puzzles and immersive storytelling, providing a robust foundation for your interactive fiction projects.
 
@@ -68,6 +68,8 @@ Last but not least, the player. To create the pleayer use this format:
 
 Note that the player id is always 1.
 
+#How to start your game
+Start your game with either "make" or "./game data.dat -l fchlog"
 
 # Dice
 The dice functionality is integrated into the code and continues to work with the roll command, but for design reasons, I have decided to remove it from the graphical part as the base game does not use it at any point.
