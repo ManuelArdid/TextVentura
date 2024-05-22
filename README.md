@@ -71,6 +71,9 @@ Note that the player id is always 1.
 # How to start your game
 Start your game with either "make" or "./game data.dat -l fchlog"
 
+# Base game
+There is a little base game included, written in spanish, called "La Mansión del Duque de Herthal".
+
 # Dice
 The dice functionality is integrated into the code and continues to work with the roll command, but for design reasons, I have decided to remove it from the graphical part as the base game does not use it at any point.
 It is only necessary to modify graphic_engine.c so that the command is displayed on the screen.
