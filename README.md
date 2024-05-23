@@ -1,5 +1,5 @@
 # TextVentura
-Created as a project for a subject in my university education and graded with honors, TextVentura is an engine that allows you to create linux terminal-based interactive fiction games in a simple way through the editing of a single .dat file.
+Created first as a single game for a subject in my university education and graded with honors, I continued working on TextVentura to transform it into an engine that allows you to create terminal-based interactive fiction games in a simple way through the editing of a single .dat file.
 
 In TextVentura, you can create rooms and objects with rich descriptions, as well as doors that block the way until the appropriate object is used. The engine supports intricate object-collecting based puzzles and immersive storytelling, providing a robust foundation for your interactive fiction projects.
 
